@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: hume_steuart_debt.aux
+The style file: aer.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: hume_steuart_debt.bib
+Warning--can't use both volume and number fields in sargent_velde1995
+Warning--there's a number but no volume in velde2003
+You've used 15 entries,
+            2984 wiz_defined-function locations,
+            748 strings with 6620 characters,
+and the built_in function-call counts, 10964 in all, are:
+= -- 1825
+> -- 501
+< -- 159
++ -- 133
+- -- 72
+* -- 497
+:= -- 2655
+add.period$ -- 21
+call.type$ -- 15
+change.case$ -- 106
+chr.to.int$ -- 15
+cite$ -- 17
+duplicate$ -- 187
+empty$ -- 384
+format.name$ -- 250
+if$ -- 2751
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 21
+newline$ -- 56
+num.names$ -- 189
+pop$ -- 267
+preamble$ -- 1
+purify$ -- 120
+quote$ -- 0
+skip$ -- 0
+stack$ -- 0
+substring$ -- 225
+swap$ -- 40
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 2
+while$ -- 157
+width$ -- 0
+write$ -- 252
+(There were 2 warnings)

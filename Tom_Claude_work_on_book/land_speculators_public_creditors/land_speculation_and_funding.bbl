@@ -1,0 +1,39 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ferguson(1961)]{Ferguson1961}
+E.~James Ferguson.
+\newblock \emph{The Power of the Purse: A History of American Public Finance,
+  1776--1790}.
+\newblock University of North Carolina Press, Chapel Hill, NC, 1961.
+
+\bibitem[Hamilton(1962)]{Hamilton1790}
+Alexander Hamilton.
+\newblock First report on the public credit.
+\newblock In Harold~C. Syrett, editor, \emph{The Papers of Alexander Hamilton},
+  volume~6, pages 51--168. Columbia University Press, New York, 1962.
+\newblock Originally presented January 9, 1790.
+
+\bibitem[Hamilton(1963)]{Hamilton1790bank}
+Alexander Hamilton.
+\newblock Report on a national bank.
+\newblock In Harold~C. Syrett, editor, \emph{The Papers of Alexander Hamilton},
+  volume~7, pages 305--342. Columbia University Press, New York, 1963.
+\newblock Originally presented December 13, 1790.
+
+\bibitem[Rothbard(1999)]{Rothbard1999}
+Murray~N. Rothbard.
+\newblock \emph{Conceived in Liberty, Volume IV: The Revolutionary War,
+  1775--1784}.
+\newblock Ludwig von Mises Institute, Auburn, AL, 1999.
+
+\bibitem[Rothbard(2011)]{Rothbard2011}
+Murray~N. Rothbard.
+\newblock \emph{Conceived in Liberty, Volume V: The New Republic, 1784--1791}.
+\newblock Ludwig von Mises Institute, Auburn, AL, 2011.
+
+\end{thebibliography}

@@ -1,0 +1,142 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\title{The Hamilton--Lucas--Stokey Connection: \\
+From 18th Century Policy to Modern Optimal Taxation Theory}
+
+\author{Research Note}
+
+\date{February 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This note traces the intellectual lineage connecting Alexander Hamilton's 1795 insights on government debt taxation to modern optimal fiscal policy theory, particularly the seminal work of Lucas and Stokey (1983) on time consistency. We document the key papers, extensions, and recent challenges to this literature, highlighting how Hamilton's intuition about the time-consistency problem anticipated formal economic theory by nearly two centuries.
+\end{abstract}
+
+\section{Introduction}
+
+In their 1982 working paper (published 1983), Robert Lucas and Nancy Stokey formalized a profound insight about optimal fiscal and monetary policy: properly structured government debt can make optimal policies time-consistent \citep{lucas_stokey_1982, lucas_stokey_1983}. Remarkably, in Section 6 of their paper, Lucas and Stokey note that Alexander Hamilton's 1795 ``Second Report on Public Credit'' \citep{hamilton_1795} anticipated their formal finding. Hamilton argued that government bonds should not be taxed because they are ``property subsisting in the faith of the government''---taxing them would violate the implicit promise made when the bonds were issued.
+
+This note documents the literature connecting Hamilton's historical insight to modern theory, organizing the key contributions and tracing how this research program has evolved.
+
+\section{The Core Insight: Time Consistency}
+
+\subsection{Hamilton's Argument (1795)}
+
+Hamilton's insight contained three key elements:
+\begin{enumerate}[noitemsep]
+\item \textbf{Bonds are promises made today}, to be honored tomorrow
+\item \textbf{Tomorrow's government faces temptation} to reduce the real value through taxation or inflation
+\item \textbf{This creates a credibility problem}---what appears optimal ex-ante is not optimal ex-post
+\end{enumerate}
+
+Hamilton concluded that maintaining the value of government debt requires commitment, arguing against both outright repudiation and subtle forms of taxation that would erode bond values. His ``Defence of the Funding System'' \citep{hamilton_1795_defence} elaborated these themes further.
+
+\subsection{Lucas--Stokey Formalization (1983)}
+
+\citet{lucas_stokey_1983} provided the first rigorous analytical framework validating Hamilton's intuition. Their key results:
+
+\textbf{Barter Economy:} With a sufficiently rich maturity structure of real government debt, optimal fiscal policy can be made time-consistent. The government can structure its debt obligations across different dates and states such that future governments have no incentive to deviate from the originally planned policy.
+
+\textbf{Monetary Economy:} Time-consistency fails for the ``inflation tax.'' Nominal assets should optimally be taxed away via immediate inflation (a capital levy). This creates a fundamental commitment problem that cannot be resolved purely through debt management---it requires institutional constraints like a commodity standard.
+
+The Lucas--Stokey framework showed that Hamilton's core insight about binding commitments is fundamental to the logical structure of intertemporal policy-making, transcending the political economy of debtor-creditor conflicts.
+
+\section{Extensions and Elaborations}
+
+\subsection{Monetary and Fiscal Policy}
+
+\citet{alvarez_kehoe_neumeyer_2004} extended Lucas--Stokey to economies with both money and real debt. They proved that monetary and fiscal policies are jointly time-consistent \emph{if and only if} the Friedman rule holds (zero nominal interest rate). This formalized Lucas--Stokey's conjecture about monetary economies.
+
+\citet{persson_persson_svensson_2006} demonstrated how time consistency can be achieved even away from the Friedman rule by carefully choosing the maturity structure of both nominal and indexed debt. Each government should leave its successor with debt structured such that the marginal benefit of surprise inflation exactly balances its marginal cost.
+
+\citet{calvo_1978} provided an early analysis of time-consistency problems in monetary policy, showing how the temptation to use surprise inflation creates credibility problems. \citet{calvo_guidotti_1992} analyzed optimal maturity structure of nominal debt in infinite-horizon models.
+
+\subsection{Incomplete Markets}
+
+\citet{aiyagari_marcet_sargent_seppala_2002} (AMSS) modified Lucas--Stokey to permit only risk-free one-period debt, eliminating state-contingent securities. Their framework:
+\begin{itemize}[noitemsep]
+\item Retains Lucas--Stokey's implementability constraint
+\item Adds stochastic sequences of measurability constraints
+\item Blends features of \citet{barro_1979}'s tax-smoothing model with Lucas--Stokey
+\item Generates near-unit root behavior in government debt and taxes
+\end{itemize}
+
+\citet{angeletos_2002} showed that even without state-contingent debt, long-term bonds provide fiscal insurance because their value responds to contemporaneous shocks, helping smooth tax distortions.
+
+\citet{buera_nicolini_2004} characterized the optimal maturity structure when the government can only issue non-contingent debt, finding that a rich maturity structure can approximately implement the Ramsey policy.
+
+\subsection{New Keynesian Models}
+
+\citet{schmitt_grohe_uribe_2004} studied optimal monetary and fiscal policy in sticky-price New Keynesian models, finding that even mild price stickiness implies negligible use of inflation surprises to stabilize debt.
+
+\citet{leeper_leith_liu_2020} analyzed optimal time-consistent policy when the government can issue long-term nominal bonds. They found that nominal debt induces state-dependent inflation bias, with the temptation greater at higher debt levels and shorter maturities.
+
+\subsection{Sovereign Default}
+
+\citet{aguiar_amador_hopenhayn_werning_2019} showed that when governments can default on debt, optimal maturity becomes concentrated at the short end---governments issue only short-term debt and avoid long-term issuance.
+
+\citet{kiiashko_2022} unified both sources of time-inconsistency (manipulation of risk-free rates \`a la Lucas--Stokey and default risk). He showed that the Lucas--Stokey result extends to environments with default, with optimal maturity exhibiting a decaying profile.
+
+\section{Recent Challenges}
+
+\subsection{Debortoli--Nunes--Yared Critique}
+
+In a major recent contribution, \citet{debortoli_nunes_yared_2021} showed that the Lucas--Stokey conclusion does not generally hold, even in their own model and using their definition of time-consistency. 
+
+\textbf{Key insight:} There exists an overlooked commitment problem that debt maturity cannot remedy. A future government will not tax on the downward-sloping side of the Laffer curve, even if doing so is ex-ante optimal. When constructed multipliers are negative (shadow cost of debt cannot be negative), today's government and future governments disagree about optimal tax rates.
+
+\citet{debortoli_nunes_yared_2017} earlier characterized optimal time-consistent maturity when governments lack commitment, showing the optimal structure tends to be approximately flat when state-contingent bonds are absent but commitment costs are minimized.
+
+This line of research suggests the Lucas--Stokey mechanism for achieving time-consistency may be more limited than originally thought, depending crucially on whether the economy operates on the upward-sloping portion of the Laffer curve.
+
+\section{Historical and Economic History Perspectives}
+
+\citet{sylla_2009, sylla_2009_nber} provides comprehensive treatment of Hamilton's financial program, documenting how his policies in the 1790s established public credit and created modern financial markets in the United States. \citet{cowen_sylla_2018} present Hamilton's key financial writings with extensive commentary, including the 1795 report cited by Lucas and Stokey.
+
+The historical record shows Hamilton was acutely aware of credibility problems. His assumption of state debts \citep{hamilton_1790_first}, creation of a sinking fund, and resistance to discriminating between original and secondary holders of debt all reflected concern with maintaining government creditworthiness for future borrowing.
+
+\section{Computational Resources}
+
+Modern implementations of these models are available through the QuantEcon project \citep{quantecon_amss}. The lectures provide Python and Julia code for:
+\begin{itemize}[noitemsep]
+\item Lucas--Stokey optimal taxation with state-contingent debt
+\item AMSS taxation without state-contingent debt  
+\item Comparative analysis of complete vs.\ incomplete markets
+\item Numerical solutions to Ramsey problems
+\end{itemize}
+
+These resources are valuable for researchers working on extensions of the Lucas--Stokey framework.
+
+\section{Synthesis: Hamilton's Prescience}
+
+The intellectual journey from Hamilton (1795) to Lucas--Stokey (1983) to Debortoli--Nunes--Yared (2021) reveals several themes:
+
+\begin{enumerate}
+\item \textbf{Institutional Design Matters:} Hamilton understood that credibility requires institutional constraints. Lucas--Stokey formalized this as debt maturity structure. Recent work shows even this may not suffice without additional commitment mechanisms.
+
+\item \textbf{The Inflation Temptation:} Hamilton's support for the gold standard and opposition to fiat money reflected awareness that nominal debt creates special commitment problems---formalized in Lucas--Stokey's analysis of monetary economies.
+
+\item \textbf{Limits of Theory:} The Debortoli--Nunes--Yared critique shows that even elegant theoretical solutions (debt maturity structure) may fail in practice when additional constraints (Laffer curve considerations) bind.
+
+\item \textbf{Enduring Questions:} Hamilton's debates with Jefferson and Madison about debt policy presaged modern disagreements about optimal debt levels, tax policy, and the role of commitment mechanisms.
+\end{enumerate}
+
+\section{Conclusion}
+
+Alexander Hamilton's intuition about government debt taxation, articulated in his 1795 report, anticipated by nearly two centuries the formal time-consistency analysis of Lucas and Stokey. The rich literature that has developed from Lucas--Stokey continues to generate new insights, with recent work challenging some of their conclusions while validating Hamilton's core insight: maintaining government creditworthiness requires careful attention to the dynamic incentives facing future policymakers.
+
+For researchers in macroeconomics and public finance, this literature provides essential tools for thinking about optimal fiscal policy. For economic historians, it demonstrates how practical statesmanship can embody deep economic principles later formalized by theory.
+
+\bibliographystyle{plainnat}
+\bibliography{hamilton_lucas_stokey}
+
+\end{document}

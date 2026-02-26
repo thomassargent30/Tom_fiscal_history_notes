@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: land_speculation_and_funding.aux
+The style file: plainnat.bst
+Database file #1: fiscal_history.bib
+You've used 5 entries,
+            2773 wiz_defined-function locations,
+            629 strings with 5596 characters,
+and the built_in function-call counts, 2032 in all, are:
+= -- 183
+> -- 58
+< -- 9
++ -- 22
+- -- 17
+* -- 119
+:= -- 315
+add.period$ -- 19
+call.type$ -- 5
+change.case$ -- 17
+chr.to.int$ -- 5
+cite$ -- 10
+duplicate$ -- 124
+empty$ -- 203
+format.name$ -- 22
+if$ -- 443
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 8
+newline$ -- 35
+num.names$ -- 24
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 15
+quote$ -- 0
+skip$ -- 84
+stack$ -- 0
+substring$ -- 69
+swap$ -- 23
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 0
+while$ -- 23
+width$ -- 0
+write$ -- 82

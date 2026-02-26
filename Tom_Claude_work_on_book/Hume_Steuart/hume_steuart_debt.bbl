@@ -1,0 +1,79 @@
+\ifx\undefined\bysame
+\newcommand{\bysame}{\leavevmode\hbox to\leftmargin{\hrulefill\,\,}}
+\fi
+\begin{thebibliography}{xx}
+
+\harvarditem[Bentemessek and Betancourt]{Bentemessek and
+  Betancourt}{2012}{bentemessek_betancourt2012}
+{\bf Bentemessek, Nesrine and Rebeca~Gomez Betancourt}, ``Public Credit and
+  Liquidity in James Steuart's Principles,'' {\it European Journal of the
+  History of Economic Thought}, 2012, {\it 19} (4), 585--617.
+
+\harvarditem[Davenant]{Davenant}{1698}{davenant1698}
+{\bf Davenant, Charles}, {\it Discourses on the Publick Revenues, and on the
+  Trade of England}, London: James Knapton, 1698.
+
+\harvarditem[Hume]{Hume}{1752}{hume1752public}
+{\bf Hume, David}, ``Of Public Credit,'' in Eugene~F. Miller, ed., {\it Essays,
+  Moral, Political, and Literary}, Indianapolis: Liberty Fund, 1752.
+\newblock Revised through the 1760s; Modern edition 1987.
+
+\harvarditem[Hume]{Hume}{1754--1762}{hume1754history}
+{\bf \bysame{}}, {\it The History of England}, London: Various, 1754--1762.
+\newblock Published in six volumes between 1754 and 1762.
+
+\harvarditem[Law]{Law}{1705}{law1705}
+{\bf Law, John}, {\it Money and Trade Consider'd with a Proposal for Supplying
+  the Nation with Money}, Edinburgh: R. and A. Foulis, 1705.
+
+\harvarditem[Menudo, ed]{Menudo, ed}{2019}{menudo2019}
+{\bf Menudo, José~M., ed.}, {\it The Economic Thought of Sir James Steuart:
+  First Economist of the Scottish Enlightenment}, New York: Routledge, 2019.
+
+\harvarditem[Murphy]{Murphy}{1997}{murphy1997}
+{\bf Murphy, Antoin~E.}, {\it John Law: Economic Theorist and Policy-Maker},
+  Oxford: Oxford University Press, 1997.
+
+\harvarditem[Rössner]{Rössner}{2016}{rossner2016}
+{\bf Rössner, Philipp~Robinson}, ``Monetary Theory and Cameralist Economic
+  Management,'' in Philipp~R. Rössner, ed., {\it Economic Growth and the
+  Origins of Modern Political Economy: Economic Reasons of State 1500--2000},
+  London: Routledge, 2016.
+
+\harvarditem[Salsman]{Salsman}{2017}{salsman2017}
+{\bf Salsman, Richard~M.}, ``The Political Economy of Public Credit: A History
+  and Analysis.'' Phd dissertation, Duke University 2017.
+
+\harvarditem[Sargent and Velde]{Sargent and Velde}{1995}{sargent_velde1995}
+{\bf Sargent, Thomas~J. and François~R. Velde}, {\it Macroeconomic Features of
+  the French Revolution}, Vol. 103 1995.
+\newblock Also see their book: The Big Problem of Small Change, Princeton
+  University Press, 2002.
+
+\harvarditem[Smith]{Smith}{1776}{smith1776}
+{\bf Smith, Adam}, {\it An Inquiry into the Nature and Causes of the Wealth of
+  Nations}, London: W. Strahan and T. Cadell, 1776.
+\newblock Modern edition: Oxford University Press, 1976.
+
+\harvarditem[Stettner]{Stettner}{1945}{stettner1945}
+{\bf Stettner, Walter~F.}, ``Sir James Steuart on the Public Debt,'' {\it
+  Quarterly Journal of Economics}, 1945, {\it 59} (3), 451--476.
+
+\harvarditem[Steuart]{Steuart}{1767}{steuart1767}
+{\bf Steuart, James}, {\it An Inquiry into the Principles of Political
+  Oeconomy}, London: A. Millar and T. Cadell, 1767.
+\newblock Modern edition edited by Andrew S. Skinner, Edinburgh: Oliver \&
+  Boyd, 1966.
+
+\harvarditem[Tribe]{Tribe}{1993}{tribe1993}
+{\bf Tribe, Keith}, ``Polizei, Staat und die Staatswissenschaften bei J. H. G.
+  von Justi,'' in Heinz Rieter and Bertram Schefold, eds., {\it Vademecum zu
+  einem Klassiker des Kameralismus}, Düsseldorf: Verlag Wirtschaft und
+  Finanzen, 1993.
+
+\harvarditem[Velde]{Velde}{2003}{velde2003}
+{\bf Velde, François~R.}, ``Government Equity and Money: John Law's System in
+  1720 France,'' {\it Federal Reserve Bank of Chicago Working Paper}, 2003,
+  (2003-31).
+
+\end{thebibliography}
