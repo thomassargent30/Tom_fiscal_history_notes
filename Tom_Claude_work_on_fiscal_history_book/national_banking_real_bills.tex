@@ -1,0 +1,614 @@
+\documentclass[12pt]{article}
+
+%% Packages
+\usepackage[margin=1.25in]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  citecolor=blue!60!black,
+  urlcolor=blue!60!black
+}
+
+\onehalfspacing
+
+\title{\textbf{From Bond-Backed Currency to Real Bills:\\
+The Inelasticity Problem and the Origins of the Federal Reserve}}
+
+\author{Thomas J.\ Sargent}
+\date{March 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+The National Banking Acts of 1863--1864 created federally chartered banks whose
+circulating notes had to be backed by holdings of specified U.S.\ government bonds
+deposited with the Comptroller of the Currency.  Critics from the 1870s onward
+complained that this arrangement made the currency ``inelastic''---unresponsive to
+the seasonal and cyclical needs of trade.  Over the following four decades a range
+of reform proposals sought to broaden the permissible backing to include railroad
+bonds, agricultural warehouse receipts, and other non-government assets.  The
+Aldrich--Vreeland Act of 1908, passed in the wake of the Panic of~1907, temporarily
+allowed emergency notes backed by a wider range of securities and created the
+National Monetary Commission that would lay the intellectual groundwork for the
+Federal Reserve.  When the Federal Reserve Act was finally passed in December~1913,
+its long title explicitly promised ``to furnish an elastic currency, to afford means
+of rediscounting commercial paper.''  The Act fulfilled this promise by embedding
+the \emph{real bills doctrine} into the Fed's discount window: only short-term,
+self-liquidating commercial paper---so-called ``real bills''---would be eligible
+for rediscount.  This essay traces the thread from the Civil War banking statutes
+through the inelasticity debate, the Aldrich--Vreeland interlude, and finally to
+the real bills provisions of the 1913 Act, together with the subsequent macroeconomic
+controversies those provisions engendered.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%% ------------------------------------------------------------------
+\section{The National Banking System, 1863--1864}
+\label{sec:national-banking}
+%% ------------------------------------------------------------------
+
+\subsection{Origins in the Civil War}
+
+Before the Civil War the United States had no uniform national currency and no
+federal bank-chartering authority.  After the demise of the Second Bank of the
+United States in 1836, banking regulation had devolved almost entirely to the states.
+The resulting system was fragmented: notes issued by one state's banks circulated at a
+steep discount elsewhere, and ``wildcat banking'' scandals in states with lax rules
+had badly shaken public confidence in paper money.
+
+The exigencies of financing the Union war effort changed the political calculus
+decisively.  Secretary of the Treasury Salmon P.\ Chase, who had opposed federal
+involvement in banking before the war, came to see a national currency as
+indispensable both for fiscal and monetary reasons.  Congress responded with the
+\emph{National Currency Act} of February~25, 1863 (12~Stat.\ 665, Ch.\ 58), later
+renamed the \emph{National Bank Act}, and its more comprehensive successor of
+June~3, 1864 (13~Stat.\ 99, Ch.\ 106).
+
+\subsection{The Bond-Backing Requirement}
+
+The central mechanism of the new system was straightforward.  A bank wishing to
+issue National Bank Notes had to:
+\begin{enumerate}
+  \item Obtain a federal charter from the newly created \emph{Office of the
+    Comptroller of the Currency} (OCC), housed in the Treasury Department.
+  \item Deposit with the Comptroller a specified quantity of United States
+    government bonds---the 1863~Act required that no less than one-third of the
+    bank's capital take the form of such bonds, held in the Comptroller's vault.
+  \item Receive in return printed currency (National Bank Notes) up to 90~percent
+    of the par or market value (whichever was lower) of the bonds so deposited.
+\end{enumerate}
+
+The notes themselves were uniform in design, printed by the federal government, and
+identical in appearance across all issuing banks save for a small identification
+panel.  The Comptroller was charged with inspecting banks to verify compliance with
+the holding requirement---making the OCC the first systematic federal bank
+supervisor in American history.  Hugh McCulloch, the first Comptroller
+(1863--1865), personally evaluated charter applications, oversaw note design, and
+arranged for note engraving, printing, and distribution.
+
+State bank notes were attacked from two directions.  A 10~percent federal tax
+imposed in 1865--1866 on payments made in state bank notes effectively drove them
+out of circulation, leaving National Bank Notes (and residual Civil War
+greenbacks) as the dominant hand-to-hand currency.  The number of national banks
+rose from 66 immediately after the 1863~Act to 7{,}473 by 1913; the number of state
+banks fell from 1{,}466 in 1863 to 247 by 1868, before rebounding as bankers
+exploited the lower capital requirements of state charters and the growing
+popularity of demand deposits (which were not taxed).
+
+\subsection{The Comptroller as Enforcer}
+
+That the U.S.\ Comptroller of the Currency was established in large part to inspect
+and verify compliance with the bond-deposit requirement deserves emphasis.  The
+Comptroller examined national banks to confirm that the bonds pledged as backing for
+outstanding notes were actually present and of sufficient value.  This supervisory
+function was novel: previously there was no federal authority empowered to walk
+into a bank and verify its balance sheet.  For our purposes the key point is that
+the legitimacy of every dollar of National Bank Note currency depended on
+there being a corresponding U.S.\ government bond sitting in the Comptroller's
+vault in Washington.
+
+%% ------------------------------------------------------------------
+\section{The Inelasticity Problem, 1865--1907}
+\label{sec:inelasticity}
+%% ------------------------------------------------------------------
+
+\subsection{Why Bond-Backing Created Rigidity}
+
+The very feature that gave National Bank Notes their credibility---the requirement
+that each dollar of notes be backed by a federal bond---also made the currency
+supply hostage to fiscal policy rather than to the needs of commerce.  The total
+stock of National Bank Notes that could lawfully circulate was bounded above by
+(roughly) 90~percent times the total par value of the designated government bonds held
+by all national banks in aggregate.  Three structural features made this constraint
+binding:
+
+\begin{enumerate}
+  \item \textbf{Declining bond supply after the Civil War.}  The federal government
+    ran large primary surpluses from the mid-1860s through the 1880s and used the
+    proceeds to retire its war debt.  As the supply of outstanding eligible bonds
+    fell, the monetary base of National Bank Notes contracted or was capped even as
+    the economy grew.
+
+  \item \textbf{Premium prices for eligible bonds.}  Because holding eligible bonds
+    entitled a bank to issue profitable currency, demand for those bonds pushed
+    their prices \emph{above} par.  A bank that paid a premium for a bond received
+    notes at the bond's par value, not its market price, compressing the profit
+    margin of note issue and reducing the incentive to expand note circulation.
+
+  \item \textbf{Seasonal and geographic rigidities.}  The agrarian economy of the
+    South and West needed sharply higher volumes of currency during planting and
+    harvest seasons.  Because National Bank Note issuance was tied to bond
+    portfolios---not to seasonal credit demand---banks could not expand circulation
+    when farmers needed cash and contract it again when crops were sold.  The result
+    was recurrent seasonal currency shortages and elevated interest rates in interior
+    agricultural districts, punctuated by periodic financial panics.
+\end{enumerate}
+
+Friedman and Schwartz \citep{friedman-schwartz1963} documented that the currency
+component of the money supply under the National Banking System was indeed
+far less responsive to economic conditions than one would expect from a well-designed
+monetary system.  Johnson \citep{johnson1999} summarized the pre-Fed banking system
+as characterized by ``immobile reserves and inelastic currency.''
+
+\subsection{Political Demands for Currency Reform}
+
+The inelasticity of the currency became a major political grievance from the
+1870s onward.  Broadly, two coalitions formed:
+
+\paragraph{Greenbackers and silver inflationists.}  The most radical critics demanded
+that the federal government simply issue more fiat money---greenbacks---or that
+silver be monetized at a generous ratio.  William Jennings Bryan's famous ``Cross
+of Gold'' speech at the 1896 Democratic Convention crystallized this position.
+These advocates cared less about the \emph{backing} of currency than about its
+\emph{quantity}; they wanted the money supply to be large enough to relieve
+debt-burdened farmers and spur economic activity.
+
+\paragraph{Asset-currency reformers.}  A more technically focused group, drawn
+largely from commercial banking circles in the Northeast but with agrarian
+sympathizers in the Midwest, argued that the problem was specifically the
+\emph{bond-backed} structure of note issue.  Their proposed remedy was
+\emph{asset currency}: allowing national banks to issue notes backed not only by
+government bonds but also by a wider range of productive assets.  The menu of
+proposed alternative backing included:
+\begin{itemize}
+  \item \emph{Railroad and corporate bonds.}  By the 1880s railroad bonds vastly
+    exceeded federal bonds in total outstanding volume; asset-currency advocates
+    argued that high-grade railroad paper was just as safe and far more plentiful.
+  \item \emph{Agricultural warehouse receipts.}  Farmers' groups and some midwestern
+    bankers proposed that banks should be able to issue notes against warehouse
+    receipts for stored grain, cotton, and other commodities.  This would make
+    the currency supply directly responsive to the seasonal rhythm of agriculture.
+  \item \emph{General ``good assets.''} Some proposals envisaged allowing note
+    issue against any sound asset on a bank's books, subject to regulatory
+    approval---a forerunner of the broader ``eligible paper'' concept that would
+    enter the Federal Reserve Act.
+\end{itemize}
+
+The common thread in asset-currency proposals was the complaint that the existing
+system was ``too inelastic,'' that it prevented currency from being ``responsive to
+the needs of trade.''  This phrase---\emph{responsiveness to the needs of trade}---
+would recur across decades of monetary debate and find its ultimate echo in both
+the Aldrich--Vreeland Act and the Federal Reserve Act.
+
+\subsection{Notable Reform Proposals and Legislation}
+
+Successive Secretaries of the Treasury and various congressional committees floated
+asset-currency bills through the 1880s and 1890s.  The Indianapolis Monetary
+Convention of 1897 brought together business and banking representatives who formally
+endorsed asset currency backed by commercial paper.  The American Bankers
+Association lobbied actively for a reform along these lines throughout the 1890s
+and early 1900s.  None of these proposals passed Congress, stymied by the
+cross-cutting politics of money: Eastern bankers feared that broadening the
+acceptable backing would destabilize the currency, while agrarians found
+asset-currency reform insufficiently generous.
+
+%% ------------------------------------------------------------------
+\section{The Panic of 1907 and the Aldrich--Vreeland Act of 1908}
+\label{sec:aldrich-vreeland}
+%% ------------------------------------------------------------------
+
+\subsection{The Panic of 1907}
+
+The Panic of 1907 brought the defects of the National Banking System into sharp
+relief.  A stock-market crash and a run on several New York trust companies
+triggered a cascade of bank suspensions.  The crisis was arrested only through the
+personal intervention of J.P.\ Morgan, who organized a pool of private funds to
+shore up the threatened institutions---a striking demonstration that in the
+absence of a lender of last resort, private co-ordination by a single wealthy
+financier was the banking system's only circuit-breaker.  The episode produced a broad
+consensus across political lines that the banking and currency system needed
+fundamental reform.
+
+\subsection{The Aldrich--Vreeland Act (May 30, 1908)}
+
+Congress responded with unusual speed.  The Aldrich--Vreeland Act (Pub.\ L.\
+60-169, 35~Stat.\ 546), introduced by Representative Edward Vreeland
+(Republican, New York) and championed in the Senate by Nelson W.\ Aldrich
+(Republican, Rhode Island), was signed into law by President Theodore Roosevelt on
+May 30, 1908.
+
+The Act had two main provisions.
+
+\paragraph{Emergency currency.}  National banks could form \emph{National Currency
+Associations} in groups of ten or more, with aggregate capital of at least
+\$5~million.  Having formed such an association, member banks could issue
+\emph{emergency currency} backed not merely by government bonds but by
+``almost any securities the banks were holding''---including railroad and other
+corporate bonds.  Once approved by association officers and the Comptroller of
+the Currency, these notes could be placed in circulation as legal tender.  The
+emergency notes bore a tax of 5~percent per annum for the first month outstanding,
+rising by 1~percentage point each subsequent month.  This punitive tax was designed
+to ensure that the emergency currency would be retired promptly once conditions
+normalized.  As it turned out, no notes were issued under this provision during
+peacetime conditions.
+
+\paragraph{National Monetary Commission.}  The Act created the \emph{National
+Monetary Commission} (NMC), chaired by Senator Aldrich, to study banking and
+currency systems in the United States and abroad and to recommend comprehensive
+reforms.  The NMC commissioned several dozen studies of banking practices in
+Europe, particularly in France, Germany, and Britain, and its reports became the
+intellectual foundation on which the Federal Reserve System was constructed.
+
+\subsection{The Aldrich--Vreeland Act in Practice: August--October 1914}
+
+The emergency currency provisions proved their worth at the outbreak of World War~I
+in August~1914, when foreign creditors---particularly British banks---demanded
+immediate gold payments that would otherwise have drained the U.S.\ monetary base.
+Secretary of the Treasury William Gibbs McAdoo activated the Aldrich--Vreeland
+machinery, and by October~23, 1914, some \$368{,}616{,}990 in emergency notes had
+been placed in circulation, averting a banking panic.  The notes were entirely
+withdrawn once the Federal Reserve banks opened for business in November~1914.
+
+\subsection{From Aldrich--Vreeland to the Federal Reserve}
+
+The NMC submitted its final report to Congress on January~9, 1912.  The report
+accompanied draft legislation---the \emph{Aldrich Plan}---proposing a
+centralized National Reserve Association with fifteen regional branches.  The Plan
+called for a lender of last resort that would discount commercial paper for member
+banks, making the currency supply elastic and eliminating the bond-backing
+straitjacket.  Opposition arose quickly: rural and progressive Democrats feared
+that the Association would be controlled by Wall Street's ``Money Trust.''  After
+extensive hearings by the Pujo Committee (May~1912--January~1913) into alleged
+financial concentration, President-elect Wilson's administration stepped in with
+a modified plan that preserved the decentralization demanded by the Bryan wing of
+the Democratic Party.
+
+%% ------------------------------------------------------------------
+\section{The Federal Reserve Act of 1913 and the Real Bills Doctrine}
+\label{sec:federal-reserve}
+%% ------------------------------------------------------------------
+
+\subsection{The Long Title as a Statement of Intent}
+
+The Federal Reserve Act, signed by President Woodrow Wilson on December~23, 1913,
+bore the official long title:
+\begin{quote}
+\emph{An Act to provide for the establishment of Federal reserve banks, to furnish
+an elastic currency, to afford means of rediscounting commercial paper, to
+establish a more effective supervision of banking in the United States, and for
+other purposes.}
+\end{quote}
+
+The phrase ``to furnish an elastic currency'' was a direct answer to the
+four-decade complaint about the National Banking System.  ``To afford means of
+rediscounting commercial paper'' signaled the mechanism by which elasticity would be
+achieved: member banks could bring eligible commercial paper to their regional
+Federal Reserve bank, which would discount it (lend against it), providing the
+bank with reserves and thus allowing it to expand its loans and note issue.
+
+\subsection{Eligible Paper and the Real Bills Doctrine}
+
+What made paper ``eligible'' for rediscount at the Fed?  Section~13 of the
+Act specified that the Federal Reserve banks could discount ``notes, drafts, and
+bills of exchange arising out of actual commercial transactions.''  The key
+adjective was \emph{commercial}: the paper had to represent a real transaction in
+goods or services, not a speculative financial transaction.  Further criteria
+required that eligible paper be:
+\begin{itemize}
+  \item \emph{Short-term}: maturing within 90 days (or six months for agricultural
+    paper);
+  \item \emph{Self-liquidating}: arising from a specific productive transaction
+    whose completion would generate the funds to repay the loan; and
+  \item \emph{Drawn for a commercial purpose}: explicitly excluding paper ``issued
+    or drawn for the purpose of carrying or trading in stocks, bonds, or other
+    investment securities.''
+\end{itemize}
+
+This set of criteria precisely codified what monetary theorists called the
+\emph{real bills doctrine} (also known as the \emph{commercial loan theory of
+banking}).
+
+\subsection{Intellectual Origins of the Real Bills Doctrine}
+
+The real bills doctrine has roots in seventeenth- and eighteenth-century banking
+thought.  John Law (\citeyear{law1720}) sketched the core idea---an
+``output-governed currency secured to real property and responding to the needs of
+trade.''  Adam Smith gave the doctrine its classical formulation in \emph{The
+Wealth of Nations} (Book~II, Ch.~2), arguing that a bank that confines its loans to
+the discount of real bills drawn against actual goods in production will never
+over-issue its notes: as goods are sold and bills repaid, the notes return to the
+bank and are extinguished, so the money supply automatically tracks the real volume
+of transactions.
+
+Henry Thornton (\citeyear{thornton1802}) identified the doctrine's central flaw
+in his \emph{An Enquiry into the Nature and Effects of the Paper Credit of Great
+Britain}: by tying the money supply to the \emph{nominal} (price times quantity)
+rather than the \emph{real} volume of trade, the doctrine set up a positive
+feedback loop from prices to money creation to prices.  If the central bank
+accommodates every demand for credit arising from trade conducted at current prices,
+and if prices are rising, the money supply will expand along with prices---adding
+fuel to inflation rather than quenching it.
+
+Despite Thornton's critique the doctrine retained influential adherents.  Thomas
+Tooke and John Fullarton rehabilitated it in a weaker form in the mid-nineteenth
+century currency--banking debate, emphasizing the ``law of reflux'': notes lent
+out against real bills flow back to the issuing bank when the bills mature and are
+self-liquidating, so the supply of notes cannot permanently exceed the demand.
+
+By the time the Federal Reserve Act was drafted, the real bills doctrine had
+achieved near-canonical status among American banking reformers.  As Federal Reserve
+Bank of Richmond economist Robert Hetzel (\citeyear{hetzel2014}) documented, ``The
+founders of the Federal Reserve desired to end financial panics \ldots\ [T]hey
+understood financial panics as resulting from speculative excess, especially on
+Wall Street.  These `real bills' views of financial panic originated in the
+19th~century American experience.''
+
+\subsection{Congress's Dual Commitment in 1913}
+
+Parintha Sastry (\citeyear{sastry2018}) has argued that in its original passage the
+1913~Act reflected a ``steadfast commitment'' to the real bills doctrine visible in
+two interrelated ways: first, by limiting the assets the Fed could purchase, discount,
+and accept as collateral to eligible commercial paper; second, by keeping
+government-sponsored credit enterprises separate from the Federal Reserve System.
+The Fed was to be a lender of last resort to \emph{commercial} banking, not a
+financier of speculative or investment activity.
+
+This limitation answered the rural critics of the Aldrich Plan who had feared that
+a central bank would become the instrument of Wall Street finance.  By
+confining eligible paper to short-term, self-liquidating commercial loans, the
+drafters---congressman Carter Glass and Senator Robert Latham Owen---sought to
+ensure that Fed credit would flow to Main Street merchants and farmers, not to
+stock-market speculators.  Wilson clinched the passage of the bill in the Senate by
+convincing Bryan's supporters that Federal Reserve notes, being obligations of the
+government, would satisfy the Populist demand for an ``elastic currency'' without
+replicating either the bond-backed rigidity of the National Banking System or the
+Wall Street favoritism of the Aldrich Plan.
+
+\subsection{The Echo of Earlier Reform Proposals}
+
+It is worth pausing to hear the echo of the pre-1908 reform proposals in the
+structure of the 1913~Act.  The asset-currency advocates of the 1880s and 1890s
+had argued that notes should be backed by productive assets rather than government
+bonds; by 1913, the drafters went further---they required not merely that bank
+assets \emph{back} the currency but that the specific assets eligible for Fed
+discount be active claims on ongoing commercial production.  The warehouse-receipt
+proposals of agrarian reformers found a close analogue in the six-month agricultural
+paper carve-out in Section~13.  The railroad-bond proposals did \emph{not} survive:
+investment securities of any kind were explicitly excluded from eligible paper.
+The final legislation represented a deliberately narrow conception of what the
+currency should be ``backed by''---narrower even than the Aldrich--Vreeland
+emergency currency, which had allowed almost any security as backing.
+
+%% ------------------------------------------------------------------
+\section{Post-1913 Controversies: Real Bills, Elasticity, and Instability}
+\label{sec:aftermath}
+%% ------------------------------------------------------------------
+
+\subsection{The Inflationary Bias}
+
+Critics of the real bills doctrine pointed to its inflationary potential almost
+from the opening of the Federal Reserve banks.  James Parthemos of the
+Federal Reserve Bank of Richmond wrote in 1988:
+\begin{quote}
+``This so-called commercial loan theory or real bills doctrine was a basic principle
+underlying the money functions of the new system.  The essential fallacy in the
+doctrine was that note issue would also vary with the price level as well as the
+real volume of trade.  Thus its operation would be inherently inflationary or
+deflationary.'' \citep{parthemos1988}
+\end{quote}
+Friedman and Schwartz (\citeyear{friedman-schwartz1963}) noted the same flaw, though
+without exploring its full implications.
+
+The pro-cyclical logic was stark.  In a boom, prices rise, the nominal value of
+commercial transactions increases, demand for discount rises, and the Fed---if
+mechanically following the real bills criterion---expands credit.  In a contraction,
+the reverse occurs, amplifying the downturn.
+
+\subsection{The Great Depression and ``Direct Pressure''}
+
+The most consequential application of the real bills doctrine came in late 1929.
+Long-serving Federal Reserve Board member Adolph C.\ Miller launched what Humphrey
+and Timberlake (\citeyear{humphrey-timberlake2019}) called the ``Direct Pressure''
+initiative: a letter to all member banks requiring any bank that sought discount
+window assistance from the Fed to certify that it had never made speculative
+loans---especially loans for stock-market purposes.  Under the real bills doctrine,
+speculative finance was categorically different from legitimate commercial lending,
+and the Fed was to be the commercial system's lender of last resort, not a
+backstop for speculators.
+
+The result was catastrophic.  Bankers, unwilling to submit to the implied
+interrogation (and doubting that the ``hard-boiled'' Fed would grant relief
+anyway), refrained from borrowing reserves even in the face of withering deposit
+outflows.  Instead of discounting at the window, banks failed---nearly 9{,}000 of
+them.  Their failure produced the one-third contraction of the money stock that
+Friedman and Schwartz held responsible for the Great Depression.
+
+\subsection{The Sargent--Wallace Reconsideration}
+
+In a 1982 article, Thomas Sargent and Neil Wallace (\citeyear{sargent-wallace1982})
+reexamined the real bills doctrine in the context of overlapping generations models.
+They showed that within such models the real bills prescription---unfettered private
+intermediation---could be Pareto superior to the quantity-theoretic prescription,
+which imposes restrictions on private intermediation designed to separate ``money''
+from credit.  David Laidler (\citeyear{laidler1984}) countered that the Sargent--Wallace
+version of real bills differed substantially from the historical doctrine that had
+guided Fed policy: the historical real bills criterion was specifically about the
+\emph{type} of collateral (short-term commercial paper versus speculative finance),
+not simply about whether intermediation should be restricted.
+
+\subsection{Legacy}
+
+The real bills provisions of the original Federal Reserve Act were gradually
+eroded over the following decades.  The Banking Acts of 1932 and 1933, passed
+during the Depression, expanded the range of assets the Fed could discount; the 1935
+amendments transferred power decisively to the Board of Governors and weakened the
+operational role of the reserve banks in policing eligible paper.  Section~13(3),
+added to the Federal Reserve Act in 1932 and invoked extensively during the
+2007--2009 financial crisis, authorizes the Fed to lend to any ``individual,
+partnership, or corporation'' in ``unusual and exigent circumstances''---a
+provision that traces its legislative DNA to the Aldrich--Vreeland emergency
+currency mechanism of 1908, and stands at the furthest possible remove from the
+strict real bills criterion of the original Act.
+
+%% ------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+%% ------------------------------------------------------------------
+
+The line from the National Banking Acts of 1863--1864 to the Federal Reserve Act
+of 1913 is coherent and traceable.  The bond-backed currency of the national
+banking era was safe but rigid; the Comptroller of the Currency guaranteed the safety
+by inspecting bond portfolios, but no institutional mechanism existed to make
+the currency responsive to the needs of trade.  Four decades of complaint---from
+Greenbackers, silver men, asset-currency advocates, and mainstream bankers
+alike---converged on the diagnosis of ``inelasticity.''
+
+The Aldrich--Vreeland Act of 1908 was a halfway house: it broadened the
+permissible backing for emergency notes beyond government bonds, pointed toward the
+eventual solution, and created the intellectual infrastructure (the National Monetary
+Commission) that would produce the 1913~Act.  The Federal Reserve Act then
+resolved the inelasticity problem by substituting the \emph{real bills} criterion for
+the bond-backing requirement.  Instead of asking ``Is this note backed by a government
+bond?'' the new regime asked ``Is this note backed by a short-term, self-liquidating
+commercial claim?''
+
+The real bills criterion was simultaneously a monetary theory (the money supply
+ought to expand and contract with productive activity), a political compromise
+(Fed credit should serve Main Street, not Wall Street), and an echo of the long
+debate over what money should be ``backed by.''  Its subsequent history---above all
+its disastrous role in the onset of the Great Depression---showed that the doctrine
+embedded in 1913 carried its own serious defects.  But understanding how the
+doctrine came to be embedded in the Act requires tracing the full arc of American
+monetary thought from the Civil War to the Progressive Era, a story whose
+protagonists include not only the drafters of legislation but the farmers, bankers,
+and economists whose decades of argument about ``currency inelasticity'' shaped the
+institutional response.
+
+%% ------------------------------------------------------------------
+\bibliographystyle{plainnat}
+\begin{thebibliography}{99}
+
+\bibitem[Friedman and Schwartz(1963)]{friedman-schwartz1963}
+  Friedman, Milton, and Anna~J. Schwartz.
+  \newblock \emph{A Monetary History of the United States, 1867--1960}.
+  \newblock Princeton University Press, Princeton, N.J., 1963.
+
+\bibitem[Hetzel(2014)]{hetzel2014}
+  Hetzel, Robert~L.
+  \newblock The real bills views of the founders of the Fed.
+  \newblock \emph{Economic Quarterly}, Federal Reserve Bank of Richmond,
+    Second Quarter 2014.
+
+\bibitem[Humphrey and Timberlake(2019)]{humphrey-timberlake2019}
+  Humphrey, Thomas~M., and Richard~H. Timberlake.
+  \newblock \emph{Gold, the Real Bills Doctrine, and the Fed: Sources of
+    Monetary Disorder, 1922--1938}.
+  \newblock Cato Institute, Washington, D.C., 2019.
+
+\bibitem[Johnson(1999)]{johnson1999}
+  Johnson, Roger~T.
+  \newblock \emph{Historical Beginnings \ldots\ The Federal Reserve}.
+  \newblock Federal Reserve Bank of Boston, Boston, 1999.
+
+\bibitem[Laidler(1984)]{laidler1984}
+  Laidler, David.
+  \newblock Misconceptions about the real-bills doctrine: A comment on Sargent
+    and Wallace.
+  \newblock \emph{Journal of Political Economy}, 92\penalty0 (1):\penalty0
+    149--155, February 1984.
+
+\bibitem[Laughlin(1908)]{laughlin1908}
+  Laughlin, J.~Laurence.
+  \newblock The Aldrich-Vreeland Act.
+  \newblock \emph{Journal of Political Economy}, 16\penalty0 (8):\penalty0
+    489--513, 1908.
+
+\bibitem[Law(1705)]{law1720}
+  Law, John.
+  \newblock \emph{Money and Trade Considered: With a Proposal for Supplying a
+    Nation with Money}.
+  \newblock Andrew Anderson, Edinburgh, 1705.
+
+\bibitem[Mints(1945)]{mints1945}
+  Mints, Lloyd~W.
+  \newblock \emph{A History of Banking Theory in Great Britain and the United
+    States}.
+  \newblock University of Chicago Press, Chicago, 1945.
+
+\bibitem[Parthemos(1988)]{parthemos1988}
+  Parthemos, James.
+  \newblock The Federal Reserve Act of 1913 in the stream of U.S.\ economic
+    history.
+  \newblock \emph{Economic Review}, Federal Reserve Bank of Richmond,
+    July/August 1988.
+
+\bibitem[Sargent and Wallace(1982)]{sargent-wallace1982}
+  Sargent, Thomas~J., and Neil Wallace.
+  \newblock The real-bills doctrine versus the quantity theory: A
+    reconsideration.
+  \newblock \emph{Journal of Political Economy}, 90\penalty0 (6):\penalty0
+    1212--1236, December 1982.
+
+\bibitem[Sastry(2018)]{sastry2018}
+  Sastry, Parintha.
+  \newblock The political origins of Section~13(3) of the Federal Reserve Act.
+  \newblock \emph{Economic Policy Review}, Federal Reserve Bank of New York,
+    2018.
+
+\bibitem[Silber(2007)]{silber2007}
+  Silber, William~L.
+  \newblock The great financial crisis of 1914: What can we learn from
+    Aldrich-Vreeland emergency currency?
+  \newblock \emph{American Economic Review (Papers and Proceedings)},
+    97\penalty0 (2):\penalty0 285--289, 2007.
+
+\bibitem[Smith(1776)]{smith1776}
+  Smith, Adam.
+  \newblock \emph{An Inquiry into the Nature and Causes of the Wealth of
+    Nations}.
+  \newblock Strahan and Cadell, London, 1776.
+
+\bibitem[Thornton(1802)]{thornton1802}
+  Thornton, Henry.
+  \newblock \emph{An Enquiry into the Nature and Effects of the Paper Credit of
+    Great Britain}.
+  \newblock Hatchard, London, 1802.
+
+\bibitem[Wicker(2005)]{wicker2005}
+  Wicker, Elmus.
+  \newblock \emph{The Great Debate on Banking Reform: Nelson Aldrich and the
+    Origins of the Fed}.
+  \newblock Ohio State University Press, Columbus, 2005.
+
+\bibitem[Willis(1914)]{willis1914}
+  Willis, Henry~Parker.
+  \newblock The Federal Reserve Act.
+  \newblock \emph{American Economic Review}, 4\penalty0 (1):\penalty0 1--24,
+    1914.
+
+\end{thebibliography}
+
+\end{document}

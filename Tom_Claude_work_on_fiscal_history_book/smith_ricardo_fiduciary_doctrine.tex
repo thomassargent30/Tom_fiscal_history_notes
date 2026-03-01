@@ -1,0 +1,1074 @@
+\documentclass[12pt]{article}
+
+%% Packages
+\usepackage[margin=1.25in]{geometry}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  citecolor=blue!60!black,
+  urlcolor=blue!60!black
+}
+
+\onehalfspacing
+
+\title{\textbf{Warehouse Certificates, Real Bills, and Fiduciary Money:\\
+The Smith--Ricardo Doctrine from Ricardo's Ingot Plan\\
+to Bretton Woods and Beyond}}
+
+\author{Thomas J.\ Sargent}
+\date{March 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+David Ricardo's 1816 ``Ingot Plan'' proposed that Britain replace
+circulating gold coin with paper bank notes backed not by 100-percent gold
+reserves but by holdings of short-term, self-liquidating commercial loans
+(``real bills'' in Adam Smith's sense) together with a modest gold reserve
+sufficient only for international settlements.  Ludwig von Mises in
+\textit{Human Action} (1949) called this combination of Smith's banking
+theory with Ricardo's monetary proposal the ``Smith--Ricardo doctrine''
+and identified it as the intellectual parent of three successive
+international monetary regimes: the pre-1914 Gold Exchange Standard, the
+British return to gold in the 1920s, and the Bretton Woods system
+engineered by John Maynard Keynes and Harry Dexter White that governed IMF
+policies from 1944 until Richard Nixon closed the gold window in 1971.
+Irving Fisher and Keynes each argued, with somewhat different emphases,
+that a well-managed fiduciary currency system could strictly dominate a
+100-percent metallic standard on both efficiency and price-level-stability
+grounds---a proposition that might be called the Fisher--Keynes Theorem of
+monetary superiority.  Milton Friedman acknowledged the efficiency claim
+but was deeply ambivalent about stability, emphasizing the discretionary
+risks inherent in any managed currency.  The 1982 paper by Thomas Sargent
+and Neil Wallace reconsidered the real-bills prescription within an
+overlapping-generations framework and found it Pareto-superior to
+quantity-theory restrictions under certain conditions, while David Laidler
+immediately cautioned that their formal doctrine differed substantially
+from the 19th-century original.  This essay reconstructs that nexus of
+ideas and identifies the unresolved tensions that run through it.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%% ------------------------------------------------------------------
+\section{Introduction}
+\label{sec:intro}
+%% ------------------------------------------------------------------
+
+There is a connected set of monetary doctrines, originating in
+18th-century British political economy, that has shaped every major
+international monetary system of the past two centuries.  At its core
+stands a deceptively simple claim: that a country can do better---both
+economically and in terms of price stability---by circulating a managed
+paper currency backed by productive-activity loans than by hoarding the
+gold and silver that such currency replaces.  The logic is compelling.
+A 100-percent gold reserve system ties up a valuable commodity in
+vault storage, sacrificing the real resources that gold could otherwise
+mobilize.  If a trusted issuer can replace gold coin with paper
+promises that circulate at face value, the gold can be exported to buy
+real imports, freeing up the ``dead stock of gold and silver'' (in
+Adam Smith's phrase) for productive use.
+
+Adam Smith laid out the banking theory underlying this claim in
+\textit{The Wealth of Nations} (1776).  David Ricardo translated it
+into a concrete institutional proposal in his \textit{Proposals for an
+Economical and Secure Currency} (1816).  John Maynard Keynes formalized
+the gold-exchange standard in his \textit{Indian Currency and Finance}
+(1913) and explicitly credited Ricardo with its theoretical foundations.
+Irving Fisher argued in \textit{The Purchasing Power of Money} (1911)
+and elsewhere that a properly managed fiduciary system would stabilize
+the price level better than any metallic standard, because the money
+supply could be adjusted to offset shocks rather than varying
+passively with gold discoveries and trade flows.
+
+Ludwig von Mises, in \textit{Human Action} (1949), brought these
+threads together under the label ``the Smith--Ricardo doctrine'' and
+argued that the doctrine was a ``fallacy'' whose misapplication had
+generated costly monetary instabilities from the 19th century through
+the collapse of Bretton Woods.  This essay traces the doctrine's
+intellectual genealogy, examines the major monetary systems it
+informed, surveys the competing modern assessments of its validity,
+and identifies the irreducible tensions between efficiency and
+stability that lie at its heart.
+
+%% ------------------------------------------------------------------
+\section{Adam Smith's Real Bills Doctrine}
+\label{sec:smith}
+%% ------------------------------------------------------------------
+
+\subsection{The Argument in \textit{The Wealth of Nations}}
+
+Book II, Chapter II of \textit{The Wealth of Nations} (1776) contains
+the essential statement of what Lloyd Mints \citeyearpar{Mints1945}
+would later term the ``real bills doctrine.''  Smith's argument begins
+with the observation that a country's circulating medium is itself a
+part of its fixed capital: gold and silver coins are productive
+assets only insofar as they facilitate exchange.  Any quantity of coin
+above the minimum required for the ``wheel of circulation'' is,
+from the social standpoint, a waste.
+
+Banks can reduce this waste by substituting paper for metal.  When a
+bank discounts a bill of exchange---a short-term instrument
+representing goods already produced and in transit to market---it
+issues bank notes that circulate in place of coin.  Because the bill
+is self-liquidating (it is repaid when the underlying goods are sold,
+typically within 60 to 90 days), the bank notes are backed by a real
+claim on output.  Smith writes:
+
+\begin{quote}
+The gold and silver money which circulates in any country may very
+properly be compared to a highway, which, while it circulates and
+carries to market all the grass and corn of the country, produces
+itself not a single pile of either.  The judicious operations of
+banking, by substituting paper in the room of a great part of this
+gold and silver, enables the country to convert, as it were, a great
+part of its highways into good pastures and corn fields, and thereby
+to increase very considerably the annual produce of its land and
+labour. \citep[Book~II, Ch.~II]{Smith1776}
+\end{quote}
+
+Two features of Smith's argument deserve emphasis.  First, the
+safety of the bank does not require a 100-percent gold reserve; it
+requires only that the bills discounted be genuine commercial claims
+on real output, not accommodation paper issued to finance consumption
+or speculation.  Second, the quantity of notes issued will be
+automatically self-regulating: notes return to the bank for
+redemption precisely when the goods they financed are sold.  The
+note supply thus tracks the ``needs of trade'' without deliberate
+central management.
+
+\subsection{The Three Flaws: Thornton's Critique}
+
+The doctrine's critics identified three fundamental weaknesses.
+Henry Thornton, in \textit{An Enquiry into the Nature and Effects of
+the Paper Credit of Great Britain} (1802), first articulated what
+would become the standard critique.
+
+\textbf{First}, the doctrine confuses real with nominal values.  Notes
+are backed by the nominal value---price times quantity---of commercial
+bills, not by their real value alone.  If price levels rise, the
+nominal value of bills rises, note issue expands to accommodate the
+higher price level, and a self-reinforcing inflationary spiral is
+possible whenever the market (loan) rate of interest is held below the
+natural (profit) rate of capital \citep{Thornton1802}.
+
+\textbf{Second}, the distinction between ``genuine'' commercial bills
+and ``speculative'' or ``accommodation'' paper is practically
+impossible to enforce.  A banker cannot reliably distinguish a bill
+backed by goods in transit from one backed by a forward bet on
+commodity prices; the paper looks identical.
+
+\textbf{Third}, and most consequentially, the doctrine is
+pro-cyclical.  When activity expands, bill volumes rise, note issue
+expands, and prices are pushed further upward.  When activity
+contracts, the reverse occurs: note issue shrinks precisely when
+a stabilizing expansion of credit might arrest the downturn.  Modern
+stabilization theory calls for counter-cyclical money, but the real
+bills doctrine delivers pro-cyclical money.
+
+These criticisms did not immediately dislodge the doctrine.  It
+survived, transmuted and rehabilitated, through the 19th-century
+currency--banking debate in Britain and re-emerged as a guiding
+principle of the Federal Reserve Act of 1913
+\citep{Fetter1965, Humphrey2001}.
+
+%% ------------------------------------------------------------------
+\section{Ricardo's Ingot Plan: Paper Warehouse Certificates for Gold}
+\label{sec:ricardo}
+%% ------------------------------------------------------------------
+
+\subsection{The 1816 Proposal}
+
+David Ricardo's \textit{Proposals for an Economical and Secure
+Currency: With Observations on the Profits of the Bank of England}
+(1816) represented the most rigorous translation of Smith's banking
+theory into a concrete monetary architecture.  The proposal emerged
+directly from the Bullionist Controversy (roughly 1797--1821), the
+great British debate about whether the wartime suspension of
+convertibility had caused the depreciation of the pound relative
+to gold.
+
+Ricardo was the leading ``Bullionist''---he argued, correctly in the
+event, that the Restriction Period (1797--1821) had allowed the Bank
+of England to over-issue notes, depreciated the pound, and raised
+prices.  But his remedy was not a simple return to full gold
+circulation.  That would waste resources.  Instead, Ricardo proposed
+what he called the ``Ingot Plan'':
+
+\begin{enumerate}
+  \item Bank notes would remain the sole circulating medium; gold
+        coin would be replaced by paper.
+  \item The Bank of England would be obliged to redeem its notes in
+        \emph{gold bullion bars} (ingots), not in coins, at a fixed
+        price.  The minimum redemption unit would be set large
+        enough---400 ounces in the original proposal---to ensure that
+        gold flowed to the Bank only for the purpose of international
+        settlement, not domestic face-to-face transactions.
+  \item The Bank would hold a modest gold reserve sufficient for
+        settling international imbalances.  Domestic circulation
+        would be paper throughout.
+  \item The Bank would expand and contract its note issue by
+        discounting and un-discounting real commercial bills of
+        exchange, thereby backing currency with productive activity
+        rather than idle gold reserves.
+\end{enumerate}
+
+As Keynes later wrote, Ricardo ``laid it down that a currency is in
+its most perfect state when it consists of a cheap material, but
+having an equal value with the gold it professes to represent; and he
+suggested that convertibility for the purposes of the foreign
+exchanges should be ensured by the tendering on demand of gold
+\emph{bars} (not coin) in exchange for notes, so that gold might be
+available for purposes of export only, and would be prevented from
+entering into the internal circulation of the country''
+\citep[Ch.~II]{Keynes1913}.
+
+The warehouse certificate metaphor captures the economic logic
+precisely.  A depositor of gold at the Bank receives a paper
+certificate acknowledging the deposit; that certificate circulates
+as money.  But Ricardo's certificates are not purely warehouse
+receipts: the Bank also issues certificates against commercial
+loans.  The gold reserve is held fractionally, not fully.  The
+``certificate'' is partly backed by gold and partly by the
+productive credit of merchants---precisely Adam Smith's vision.
+
+\subsection{The Bullionist Controversy and Its Resolution}
+
+The Bullion Committee Report of 1810, drafted largely on the
+basis of Ricardo's testimony and arguments, endorsed the Bullionist
+position: the pound had depreciated because of excess note issue
+by the Bank \citep{BullionReport1810}.  Its recommendation for
+an early resumption of convertibility was initially rejected by
+Parliament, embarrassing the Bank, but eventually vindicated by
+the return to gold in 1819 at the pre-war parity.
+
+The Ingot Plan itself was never implemented exactly, but it
+provided the intellectual template for subsequent monetary
+architecture.  The Bank Charter Act of 1844 (``Peel's Act'')
+moved in the opposite direction---toward 100-percent marginal
+gold backing for any note issue above a fixed fiduciary
+issue---but the gold exchange standard that gradually emerged
+in practice among Britain's trading partners was far closer
+to Ricardo's vision than to Peel's.
+
+%% ------------------------------------------------------------------
+\section{The Mises Critique: A Doctrine and Its Fallacy}
+\label{sec:mises}
+%% ------------------------------------------------------------------
+
+Ludwig von Mises, in \textit{Human Action: A Treatise on Economics}
+(1949), gave the tradition its sharpest critical label.  He
+identified a ``Smith--Ricardo doctrine'' that he traced from Smith's
+banking chapters through Ricardo's Ingot Plan to the 20th-century
+monetary systems he regarded as fatally flawed.
+
+Mises's argument was twofold.  First, the doctrine was technically
+defective: the real bills criterion cannot stabilize the money
+supply because it allows note issue to expand endlessly so long as
+bankers continue to lend against commercial paper whose nominal
+value inflates with prices \citep{Mises1949}.  This repeats
+Thornton's first objection in Austrian garb.
+
+Second, and more fundamental for Mises, the doctrine provided cover
+for central bank discretion and inflationary finance.  Once it is
+accepted that a trusted central bank can manage a fractional-reserve
+currency better than an automatic gold standard, the door is open
+to successive debasements justified by appeals to productive
+necessity.  The Smith--Ricardo doctrine was, for Mises, not merely
+an intellectual error but an institutional temptation---a
+``fallacy'' that historically supported each successive erosion of
+gold discipline.
+
+Mises traced this institutional path explicitly:
+
+\begin{enumerate}
+  \item  The \emph{Gold Exchange Standard}, described by Keynes in
+         \textit{Indian Currency and Finance} (1913) and popularized
+         in the late 19th century especially through the Indian and
+         Dutch currency reforms, allowed peripheral countries to hold
+         not gold itself but claims on a gold-standard country (sterling)
+         as monetary reserves.  The Smith--Ricardo logic justified
+         the arrangement: a currency is ``in its most perfect state''
+         when it consists of a cheap material equal in value to gold,
+         without gold itself circulating domestically.
+  \item  The \emph{British return to gold in 1925} at the old parity
+         of \$4.86 per pound was arranged on gold-exchange-standard
+         principles, with Britain holding significant foreign-exchange
+         reserves alongside a diminished gold hoard.  Winston Churchill,
+         as Chancellor of the Exchequer, implemented the Gold Standard
+         Act of 1925 over the famous objections of Keynes, who argued
+         in \textit{The Economic Consequences of Mr.\ Churchill} (1925)
+         that the overvalued parity would impose severe deflation.
+  \item  The \emph{Bretton Woods system} (1944--1971) extended the
+         gold-exchange logic globally.  Other currencies fixed to
+         the U.S.\ dollar; only the dollar was convertible into gold,
+         and only for foreign central banks, at the fixed rate of
+         \$35 per troy ounce.  The IMF enforced exchange-rate
+         discipline within this dollar-gold pyramid.
+\end{enumerate}
+
+For Mises, each step in this sequence represented a further
+removal from the discipline of a full gold standard, and each was
+legitimized by the Smith--Ricardo argument that managed paper
+is superior to metallic money---a claim he regarded as the root
+of 20th-century monetary disorder \citep{Mises1949,
+Salerno1982}.
+
+%% ------------------------------------------------------------------
+\section{The Gold Exchange Standard and Keynes}
+\label{sec:ges}
+%% ------------------------------------------------------------------
+
+\subsection{Keynes's 1913 Codification}
+
+John Maynard Keynes's \textit{Indian Currency and Finance} (1913)
+is the most authoritative early codification of the gold exchange
+standard as a monetary system.  Writing about the Indian rupee
+(fixed to sterling in 1893), Keynes described the theoretical
+advantages that Ricardo had identified nearly a century earlier:
+
+\begin{quote}
+The Gold-Exchange Standard arises out of the discovery that, so
+long as gold is available for payments of international
+indebtedness at an approximately constant rate in terms of the
+national currency, it is a matter of comparative indifference
+whether it actually forms the national currency\ldots\ The
+Gold-Exchange Standard may be said to exist when gold does not
+circulate in a country to an appreciable extent, when the local
+currency is not necessarily redeemable in gold, but when the
+Government or Central Bank makes arrangements for the provision
+of foreign remittances in gold at a fixed maximum rate in terms
+of the local currency, the reserves necessary to provide these
+remittances being kept to a considerable extent abroad.
+\citep[Ch.~II]{Keynes1913}
+\end{quote}
+
+Keynes was explicit that this system's ``theoretical advantages
+were first set forth by Ricardo.''  He noted that among its
+virtues were (a) economy in the use of gold---the resource cost
+of maintaining a full gold circulation was equivalent to tying up
+capital in idle metal---and (b) stability, since a managed reserve
+could be held at whatever level was consistent with exchange
+stability rather than being thrown about by arbitrary gold flows.
+
+\subsection{Britain's Return to Gold, 1925}
+
+The Cunliffe Committee (1918--1919) recommended that Britain
+return to gold at the pre-war parity after the war.  When
+Winston Churchill implemented this in April 1925, the arrangement
+was essentially a gold bullion standard rather than a gold specie
+standard: the Bank of England held gold bars, not coins, and
+would exchange notes for bars only in large minimum lots.
+Domestic circulation was entirely in paper.  This was almost
+exactly Ricardo's Ingot Plan realized 109 years after the fact.
+
+Keynes objected strenuously \citep{Keynes1925}, not to the
+principle of a gold-backed managed currency, but to the choice
+of the pre-war parity.  He argued that the pound was overvalued
+by approximately 10 percent at \$4.86, and that restoring the
+old parity would require severe domestic deflation to restore
+competitiveness---deflation that would fall disproportionately on
+wages and employment given labor market rigidities.  He was proved
+correct: the overvalued pound contributed to chronic British
+stagnation in the late 1920s and forced the final departure from
+gold in September 1931 \citep{Eichengreen1992}.
+
+\subsection{The Interwar Period and the Collapse}
+
+The interwar gold exchange standard, reconstructed at Genoa (1922)
+under Anglo-American auspices, was a pale shadow of the pre-1914
+classical gold standard \citep{Eichengreen1992, Nurkse1944}.
+Several structural problems undermined it:
+
+\begin{enumerate}
+  \item \textbf{Reserve concentration}:  Gold was heavily
+        concentrated in the United States and France.  The price-specie
+        flow mechanism required that gold-rich countries inflate while
+        gold-poor countries deflate, but both the Federal Reserve and
+        the Banque de France ``sterilized'' their inflows to avoid
+        domestic inflation.
+  \item \textbf{Short-term capital flows}:  The sterling-dollar
+        exchange was subject to speculative attack in a way the
+        pre-war system, backed by deeper credibility, had largely
+        escaped.
+  \item \textbf{Real bills policy at the Fed}:  Under the influence
+        of the real bills doctrine (particularly the ``Direct Pressure''
+        initiative of Federal Reserve Board member Adolph C.\ Miller),
+        the Fed contracted credit in 1929--1931 precisely when
+        expansion was needed, contributing to the Great Contraction
+        analyzed by \citet{FriedmanSchwartz1963} and later
+        \citet{HumphreyTimberlake2019}.
+\end{enumerate}
+
+%% ------------------------------------------------------------------
+\section{Bretton Woods: Keynes, White, and the Dollar-Gold System}
+\label{sec:bretton-woods}
+%% ------------------------------------------------------------------
+
+The Bretton Woods Conference of July 1944 created the post-World
+War II monetary order that governed international finance until
+Nixon's announcement of August 15, 1971.  The intellectual
+architects were John Maynard Keynes (representing Britain) and
+Harry Dexter White (representing the United States), and their
+design bore the clear imprint of the Smith--Ricardo tradition.
+
+Keynes's draft plan for an \textit{International Clearing Union}
+(the ``Keynes Plan'') proposed a supranational institution with
+its own unit of account (the ``bancor''), whose members would
+hold bancor balances rather than gold.  Trade imbalances would
+be settled in bancor, with symmetric adjustment obligations on
+both surplus and deficit countries.  Gold would play no active
+circulating role; it would be a one-way valve used by countries
+to acquire bancors but not the reverse \citep{Keynes1943}.
+
+White's draft plan was less radical but structurally similar
+in its drift away from a full gold standard.  The compromise
+agreed at Bretton Woods established:
+
+\begin{enumerate}
+  \item  Fixed exchange rates for all member currencies denominated
+         in U.S.\ dollars.
+  \item  Dollar convertibility into gold at \$35 per ounce, but
+         only for foreign monetary authorities, not private parties.
+  \item  An International Monetary Fund (IMF) to provide short-term
+         balance-of-payments financing and supervise exchange
+         rate adjustments.
+  \item  Capital controls permitted (indeed, expected) as part of
+         the adjustment mechanism.
+\end{enumerate}
+
+The arrangement was again a gold exchange standard in Ricardo's
+sense: gold did not circulate domestically in any country; it served
+only as the ultimate reserve behind the dollar, behind which all
+other currencies stood.  The dollar was, in effect, a warehouse
+certificate for gold, and other currencies were warehouse certificates
+for dollars.
+
+The system worked tolerably well through the 1950s and
+into the 1960s, but its design contained a structural paradox
+identified by Robert Triffin in 1960 (the ``Triffin dilemma''):
+the world's demand for dollar reserves could only be satisfied
+by persistent U.S.\ balance-of-payments deficits, but those
+deficits would eventually erode confidence in dollar
+convertibility \citep{Triffin1960}.  As U.S.\ gold reserves
+fell from about 574 million troy ounces in 1949 to 296 million
+by 1971, and as foreign dollar claims accumulated, the system
+became increasingly fragile.  The final crisis came with
+France's persistent demands for gold conversion of its dollar
+holdings (de Gaulle's ``assault on Fort Knox'') and the
+fiscal excesses of the Vietnam War era.  Nixon closed the
+gold window on August 15, 1971, and the Bretton Woods
+system---the culmination of the Smith--Ricardo institutional
+lineage---ended \citep{Eichengreen1996}.
+
+%% ------------------------------------------------------------------
+\section{The Fisher--Keynes Theorem: Fiduciary Money Dominates}
+\label{sec:fisher-keynes}
+%% ------------------------------------------------------------------
+
+\subsection{Fisher's Stability Case}
+
+Irving Fisher in \textit{The Purchasing Power of Money} (1911)
+and \textit{Stabilizing the Dollar} (1920) went further than
+Smith and Ricardo in arguing for the superiority of managed paper.
+He proposed the ``compensated dollar'' plan: adjust the gold
+content of the dollar periodically to stabilize the price level.
+Under a 100-percent gold standard, price level movements are
+governed by the ratio of gold production to real output growth.
+Under Fisher's managed standard, a central authority adjusts the
+gold exchange rate to keep the price level stable---achieving
+both the resource cost savings of fiduciary money and the
+price-level stability that a metallic standard can only deliver
+accidentally.
+
+Fisher's implicit ``theorem'' (he did not state it formally)
+is that a managed fiduciary currency weakly dominates a 100-percent
+metallic standard:
+\begin{itemize}
+  \item It saves the resource cost of the gold reserve
+        (efficiency advantage);
+  \item It achieves price stability more reliably, since money
+        can be contracted or expanded to offset shocks rather
+        than varying with the accidents of gold mining
+        (stability advantage).
+\end{itemize}
+
+Both advantages hold if---and this is the critical assumption---the
+monetary authority is competent and honest.  Fisher was not
+na\"ive about this; his 100-percent reserve banking proposal
+of 1935 was precisely an attempt to discipline the banking system
+by separating the money-creation function from the
+lending function \citep{Fisher1935}.
+
+\subsection{Keynes's Parallel Argument}
+
+Keynes made a parallel argument with characteristic breadth.
+In \textit{A Tract on Monetary Reform} (1923) he wrote:
+
+\begin{quote}
+In truth, the gold standard is already a barbarous relic.  All of
+us, from the Governor of the Bank of England downwards, are now
+primarily interested in preserving the stability of business,
+prices, and employment, and are not likely, when the choice is
+forced on us, deliberately to sacrifice these to the outworn
+dogma, which had its value once, of \pounds 3 17s.\ 10\textonehalf d.\ per ounce. 
+\citep{Keynes1923}
+\end{quote}
+
+The argument was not merely rhetorical.  In \textit{A Treatise on
+Money} (1930) and \textit{The General Theory} (1936) Keynes
+developed a more systematic case: a gold standard imposes
+a deflationary bias in a world where wages are sticky downward,
+because trade imbalances must be corrected by price and wage
+adjustment borne by deficit countries, not by symmetric expansion
+in surplus countries.  A fiduciary system with a flexible exchange
+rate---or an internationally coordinated system with symmetric
+adjustment obligations---could in principle eliminate this
+deflationary bias while preserving monetary discipline.
+
+The efficiency argument (saving the resource cost of idle gold
+reserves) also appears in Keynes, most explicitly in the Bretton
+Woods negotiations, where he estimated the global welfare gain
+from mobilizing that gold for productive investment.
+
+\subsection{Is It a Theorem?}
+
+The Fisher--Keynes claim is heuristically compelling but not a
+formal theorem in the sense of a precisely stated proposition
+with clearly articulated hypotheses and a proof.  The nearest
+formal statement in modern monetary theory is probably the
+following \citep[cf.][]{FriedmanSchwartz1963, Lucas1992}:
+
+\begin{quote}
+\textit{If the monetary authority can credibly commit to a
+price-level or inflation target, then a fiduciary currency
+weakly dominates a commodity-money standard: it provides the
+same (or better) price-level stability at lower resource cost,
+because the commodity reserve is eliminated and the currency
+supply can be adjusted in response to demand shocks.}
+\end{quote}
+
+The key conditional---``if the monetary authority can credibly
+commit''---is where all the institutional difficulty lies.  A
+commodity standard provides credibility through a physical
+constraint; a fiduciary standard must generate credibility
+from institutions, reputations, and constitutional arrangements
+that are harder to establish and easier to abandon
+\citep{Bordo1990, BarroGordon1983}.
+
+The claim is also not obviously true in all environments.  In an
+economy where the fiscal authority is prone to seigniorage
+extraction---financing deficits by money creation---a
+hard metallic constraint may dominate a fiduciary system not
+because of its efficiency properties but because of its
+commitment properties \citep{Sargent1982unpleasant}.  This is
+the core of Mises's critique: in a world of governments
+susceptible to inflationary pressure, the Fisher--Keynes comparison
+of a \emph{well-managed} fiduciary system against a metallic
+standard is misleading, because the metallic standard is the
+relevant commitment device precisely in environments where
+``well-managed'' cannot be taken for granted.
+
+%% ------------------------------------------------------------------
+\section{Friedman's Ambivalence}
+\label{sec:friedman}
+%% ------------------------------------------------------------------
+
+Milton Friedman's position on the Fisher--Keynes claim is genuinely
+complex and evolved over his career.  His ambivalence reflects
+the irreducible tension between the efficiency gains from fiduciary
+money and the commitment problems that fiduciary money creates.
+
+On the efficiency side, Friedman was an early and consistent
+advocate of a pure fiat currency eliminating the resource cost
+of commodity money.  In \textit{A Program for Monetary Stability}
+(1960) he proposed a fixed-rate monetary growth rule---what
+became known as the ``k-percent rule''---as the best practical
+substitute for the automatic discipline of a gold standard
+\citep{Friedman1960}.  The proposal accepted the Fisher--Keynes
+efficiency argument: there is no reason to tie up real resources
+in gold when paper can do the same monetary work.
+
+On the stability side, however, Friedman was deeply skeptical
+of managed discretionary monetary systems---including exactly
+the managed gold exchange standards that Ricardo, Keynes, and
+Fisher had advocated.  His historical case study was damning.
+In \textit{A Monetary History of the United States, 1867--1960}
+(1963), co-authored with Anna J.\ Schwartz, Friedman showed that
+the Federal Reserve---operating under real-bills principles in
+the 1930s---had caused the Great Contraction through errors of
+commission (passive acquiescence to bank failures) and omission
+(failure to expand the money supply) \citep{FriedmanSchwartz1963}.
+
+\subsection{The Optimum Quantity of Money}
+
+Friedman's analysis of the \textit{optimum quantity of money}
+(1969) provides the clearest statement of the efficiency dimension
+of his thought.  The social opportunity cost of holding money is
+the nominal interest rate; the marginal cost of producing fiat
+money is approximately zero.  Therefore the optimal monetary
+policy requires driving the nominal interest rate to zero through
+mild deflation at the rate of the real interest rate
+\citep{Friedman1969}.  A metallic standard cannot achieve this
+optimum without deflation equal to the real return on capital,
+which is costly in a world of debt-deflation dynamics; a fiat
+standard can achieve it by choice of the monetary growth rate.
+
+\subsection{The k-Percent Rule as a Middle Ground}
+
+Friedman's k-percent rule was an attempt to capture the
+efficiency advantages of fiat money while avoiding the discretion
+risks of managed money.  The rule was constitutional rather than
+merely advisory: Friedman wanted the money growth rate fixed by
+law, not by the judgment of central bankers.  In this respect
+the rule is a substitute for the gold standard's automatic
+discipline, not an endorsement of fine-tuned management.
+
+His famous statement that ``the gold standard works
+well under only those circumstances in which it is not needed''
+captures his position: a gold standard is a superfluous constraint
+when the fiscal and monetary authorities are already disciplined,
+and an ineffective constraint when they are not, since a
+determined government can always abandon convertibility
+\citep{Friedman1962}.  Yet Friedman was also skeptical that
+central bankers could be trusted to manage a fiat currency
+wisely---hence the k-percent rule as a rule-based alternative
+to both.
+
+Late in life, Friedman modified even this position, suggesting
+that monetary targeting had become impractical as financial
+innovation blurred the boundaries of monetary aggregates, and
+that inflation targeting by independent central banks might be
+the best available approximation to his rule-based ideal
+\citep{Friedman2003}.  His ambivalence about the Fisher--Keynes
+claim thus never fully resolved: he accepted the efficiency
+argument in principle while doubting that any real institution
+could reliably deliver the stability benefits in practice.
+
+%% ------------------------------------------------------------------
+\section{Sargent--Wallace (1982) and the Modern Reassessment}
+\label{sec:sargent-wallace}
+%% ------------------------------------------------------------------
+
+In 1982 Thomas Sargent and Neil Wallace published ``The Real-Bills
+Doctrine versus the Quantity Theory: A Reconsideration'' in the
+\textit{Journal of Political Economy} \citep{SargentWallace1982}.
+Working within an overlapping-generations (OLG) model, they showed
+that the traditional quantity-theory prescription---restrict private
+intermediation to control the money supply---is not Pareto optimal,
+while the real-bills prescription---allow unfettered private
+intermediation or central bank operations designed to replicate such
+intermediation---achieves the Pareto optimal allocation.
+
+The intuition is that in an OLG economy, money serves not only as
+a medium of exchange but as a store of value.  Restricting the
+supply of money-substitutes (safe, short-term financial assets)
+forces agents into an inferior portfolio, reducing welfare.
+Allowing banks to issue notes against commercial loans---the
+real-bills prescription---expands the supply of safe assets to
+its efficient level.
+
+Sargent and Wallace were careful to note that their result depends
+on specific modeling assumptions, including the absence of aggregate
+demand shocks that might make monetary control desirable for
+stabilization purposes.  But the formal result was striking: under
+those assumptions, the real bills prescription is superior to
+quantity-theory restrictions.
+
+Monetary historian David Laidler \citeyearpar{Laidler1984} immediately
+published a comment noting that Sargent and Wallace's formal doctrine
+differed substantially from the historical 19th-century real bills
+doctrine.  The historical doctrine was about preventing over-issue
+by tying notes to real commercial activity; Sargent and Wallace's
+result was about achieving Pareto optimality through unrestricted
+intermediation.  These are not the same claim, and the historical
+doctrine's critics---Thornton, Fisher, Friedman---were targeting
+the former, not the latter.
+
+The exchange illustrates a general methodological point: formal
+models can rehabilitate the \textit{intuition} behind an old
+doctrine while differing materially from its historical content
+and institutional applications.  Both the real bills doctrine's
+historical defenders and its defenders in modern theory are pointing
+at the efficiency gains from allowing the private financial system
+to create liquid claims on real activity.  But the stability risks
+that the historical critics identified are not captured in OLG
+models without aggregate uncertainty, and it is precisely those
+stability risks that determine the welfare comparison in practice.
+
+%% ------------------------------------------------------------------
+\section{The Unresolved Tensions}
+\label{sec:tensions}
+%% ------------------------------------------------------------------
+
+The Smith--Ricardo doctrine traverses a remarkable landscape of
+monetary thought.  Several fundamental tensions run through it that
+remain unresolved.
+
+\subsection{Efficiency versus Credibility}
+
+The efficiency case for fiduciary money is robust: eliminating gold
+from domestic circulation frees up real resources, and a managed
+currency can in principle achieve price stability at lower deadweight
+loss than an automatic metallic standard.  But the efficiency gains
+are only realized if the monetary authority is credible---if agents
+believe it will not exploit the liberty to print money for fiscal
+purposes.  This credibility is harder to establish for a fiat
+currency than for a metallic standard, because the metallic
+obligation is physical while the fiat obligation is institutional.
+
+\citet{BarroGordon1983} formalized this tension as the time-inconsistency
+problem: a benevolent government that can issue fiat money at zero
+cost faces a systematic incentive to surprise agents with inflation
+to exploit the short-run Phillips-curve tradeoff.  Rational agents
+anticipate this and require compensation through higher nominal wages
+and interest rates, producing an inflationary equilibrium with no
+employment gain.  The gold standard's discipline prevents this
+outcome by eliminating the temptation.
+
+\subsection{Stability versus Flexibility}
+
+The deflationary bias of a metallic standard in a world of sticky
+wages is the Keynesian case for fiduciary money.  This case was
+spectacularly confirmed by the Great Depression: the gold standard
+transmitted deflationary shocks internationally and constrained
+central banks from offsetting them
+\citep{BernankeJames1991, Eichengreen1992}.  Countries that
+abandoned gold early (Britain in 1931, the United States in 1933)
+recovered earlier.
+
+But fiduciary flexibility without discipline produced the Great
+Inflation of the 1970s: after Nixon closed the gold window, the
+major economies experienced a decade of stagflation that the
+Bretton Woods architects had not foreseen.  The discipline that
+Mises saw as the gold standard's chief virtue proved to be the
+Bretton Woods system's chief weakness.  Achieving both flexibility
+and discipline simultaneously---what modern inflation-targeting
+regimes attempt---requires institutional arrangements whose
+permanence neither Smith, Ricardo, Fisher, nor Keynes had reason
+to take for granted.
+
+\subsection{The Real Bills Problem}
+
+The real bills doctrine embedded in Ricardo's plan and in the
+Federal Reserve Act of 1913 was precisely the mechanism that,
+under the Federal Reserve's literal interpretation in the 1920s
+and 1930s, generated the pro-cyclical contraction
+\citet{HumphreyTimberlake2019} identify as a proximate cause of
+the Great Depression.  The doctrine's recommendation to restrict
+the discount window to ``real'' as opposed to ``speculative''
+bills---fine in theory, impossible to implement in practice---led the
+Fed to contract credit exactly when expansion was required.
+
+The irony was total: a doctrine designed to ensure monetary
+adequacy by tying note supply to productive activity ended up
+producing monetary stringency by applying a distinction that was
+doctrinally clear but operationally meaningless.  As Adolph
+C.\ Miller's ``Direct Pressure'' letter of 1929 showed, the doctrine
+was not merely irrelevant but actively harmful when wielded
+by administrators who took its productive--speculative distinction
+seriously \citep{HumphreyTimberlake2019}.
+
+\subsection{International Architecture}
+
+At the international level, the Smith--Ricardo doctrine generates
+a different tension.  A gold exchange standard economizes on gold
+but creates a hierarchy of credibility: peripheral countries hold
+claims on center-country currencies rather than gold itself.  This
+architecture is efficient only so long as the center country
+maintains its gold commitment.  When that commitment becomes
+incredible---as the Triffin dilemma explains for Bretton
+Woods---the entire system is vulnerable to a sudden transition to
+a new regime.  The 1971 Nixon shock was not a smooth policy
+adjustment; it was a credibility crisis whose disorderly resolution
+produced a decade of currency volatility \citep{Volcker1992}.
+
+The modern post-Bretton Woods system of floating exchange rates and
+inflation-targeting central banks is, in effect, the logical
+endpoint of the Smith--Ricardo trajectory: all gold constraint has
+been removed, and monetary discipline must be generated entirely
+by institutional credibility.  Whether this represents the
+Fisher--Keynes efficiency frontier or the Misesian nightmare of
+unconstrained fiduciary money depends, as always, on the
+quality of the governing institutions.
+
+%% ------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+%% ------------------------------------------------------------------
+
+The Smith--Ricardo doctrine is one of the most consequential ideas
+in the history of monetary policy.  Its core insight---that a trusted
+institution can serve the monetary functions of gold at a fraction
+of the resource cost---is correct.  Adam Smith saw it in the
+operations of Scottish banks discounting commercial paper.  Ricardo
+formalized it in the Ingot Plan.  Keynes extended it to international
+monetary architecture.  Fisher argued it implied a superiority of
+managed fiduciary money over automatic metallic standards.
+
+Two centuries of experience have simultaneously confirmed the
+efficiency insight and complicated the stability claim.  The Great
+Depression demonstrated the deflationary dangers of an automatic
+gold standard in a world of sticky wages and financial fragility.
+The Great Inflation of the 1970s demonstrated the inflationary
+dangers of a fiduciary system without adequate institutional
+discipline.  The Fisher--Keynes argument that a well-managed
+fiduciary system dominates a metallic standard is probably best
+understood as a claim about the frontier of attainable outcomes:
+if institutions are adequate, fiduciary money achieves both
+greater efficiency and greater stability.  Whether institutions
+are in fact adequate is an empirical question whose answer varies
+by country, era, and constitutional arrangement.
+
+Friedman's ambivalence is, in retrospect, the most honest position.
+The efficiency claim is strong; the stability claim is conditional
+on institutional quality; the historical record is mixed.  The
+Smith--Ricardo doctrine illuminates the efficiency frontier of
+monetary design.  It does not resolve the political economy problem
+of how to get there and stay there.
+
+The modern global monetary order---floating rates, independent
+central banks, inflation targets---is the inheritor of the
+Smith--Ricardo doctrine in its most ambitious form: a pure fiduciary
+system globally, with gold playing no formal role.  Its performance
+over the past quarter-century in the advanced economies has been
+generally better than either the Great Depression gold standard or
+the 1970s managed float would suggest.  Whether (in Mises's terms)
+the doctrine ``fallacy'' has finally been tamed by institutional
+design, or whether the Smith--Ricardo tensions are merely in
+abeyance awaiting the next fiscal or financial shock, remains
+to be seen.
+
+%% ------------------------------------------------------------------
+\bigskip
+\bibliographystyle{plainnat}
+
+\begin{thebibliography}{99}
+
+\bibitem[Barro and Gordon(1983)]{BarroGordon1983}
+Barro, R.~J. and D.~B. Gordon (1983).
+\newblock Rules, discretion and reputation in a model of monetary policy.
+\newblock \textit{Journal of Monetary Economics} 12(1), 101--121.
+
+\bibitem[Bernanke and James(1991)]{BernankeJames1991}
+Bernanke, B. and H.~James (1991).
+\newblock The gold standard, deflation, and financial crisis in the great
+  depression: An international comparison.
+\newblock In R.~G. Hubbard (Ed.), \textit{Financial Markets and Financial
+  Crises}, pp. 33--68. University of Chicago Press.
+
+\bibitem[{Bullion Committee}(1810)]{BullionReport1810}
+{Bullion Committee} (1810).
+\newblock \textit{Report together with Minutes of Evidence, and Accounts, from
+  the Select Committee on the High Price of Gold Bullion}.
+\newblock House of Commons, London.
+
+\bibitem[Bordo(1990)]{Bordo1990}
+Bordo, M.~D. (1990).
+\newblock The lender of last resort: Alternative views and historical
+  experience.
+\newblock \textit{Federal Reserve Bank of Richmond Economic Review} 76(1),
+  18--29.
+
+\bibitem[Eichengreen(1992)]{Eichengreen1992}
+Eichengreen, B. (1992).
+\newblock \textit{Golden Fetters: The Gold Standard and the Great Depression,
+  1919--1939}.
+\newblock Oxford University Press.
+
+\bibitem[Eichengreen(1996)]{Eichengreen1996}
+Eichengreen, B. (1996).
+\newblock \textit{Globalizing Capital: A History of the International Monetary
+  System}.
+\newblock Princeton University Press.
+
+\bibitem[Fetter(1965)]{Fetter1965}
+Fetter, F.~W. (1965).
+\newblock \textit{Development of British Monetary Orthodoxy, 1797--1875}.
+\newblock Harvard University Press.
+
+\bibitem[Fisher(1911)]{Fisher1911}
+Fisher, I. (1911).
+\newblock \textit{The Purchasing Power of Money: Its Determination and Relation
+  to Credit, Interest and Crises}.
+\newblock Macmillan.
+
+\bibitem[Fisher(1920)]{Fisher1920}
+Fisher, I. (1920).
+\newblock \textit{Stabilizing the Dollar}.
+\newblock Macmillan.
+
+\bibitem[Fisher(1935)]{Fisher1935}
+Fisher, I. (1935).
+\newblock \textit{100\% Money}.
+\newblock Adelphi.
+
+\bibitem[Friedman(1960)]{Friedman1960}
+Friedman, M. (1960).
+\newblock \textit{A Program for Monetary Stability}.
+\newblock Fordham University Press.
+
+\bibitem[Friedman(1962)]{Friedman1962}
+Friedman, M. (1962).
+\newblock \textit{Capitalism and Freedom}.
+\newblock University of Chicago Press.
+
+\bibitem[Friedman(1969)]{Friedman1969}
+Friedman, M. (1969).
+\newblock The optimum quantity of money.
+\newblock In \textit{The Optimum Quantity of Money and Other Essays}. Aldine.
+
+\bibitem[Friedman(2003)]{Friedman2003}
+Friedman, M. (2003).
+\newblock The Fed's thermostat.
+\newblock \textit{Wall Street Journal}, August~19.
+
+\bibitem[Friedman and Schwartz(1963)]{FriedmanSchwartz1963}
+Friedman, M. and A.~J. Schwartz (1963).
+\newblock \textit{A Monetary History of the United States, 1867--1960}.
+\newblock Princeton University Press.
+
+\bibitem[Humphrey(2001)]{Humphrey2001}
+Humphrey, T.~M. (2001).
+\newblock The real bills doctrine.
+\newblock In D.~Glasner (Ed.), \textit{Business Cycles and Depressions: An
+  Encyclopedia}. Routledge.
+
+\bibitem[Humphrey and Timberlake(2019)]{HumphreyTimberlake2019}
+Humphrey, T.~M. and R.~H. Timberlake (2019).
+\newblock \textit{Gold, the Real Bills Doctrine, and the Fed: Sources of
+  Monetary Disorder, 1922--1938}.
+\newblock Cato Institute Press.
+
+\bibitem[Keynes(1913)]{Keynes1913}
+Keynes, J.~M. (1913).
+\newblock \textit{Indian Currency and Finance}.
+\newblock Macmillan.
+
+\bibitem[Keynes(1923)]{Keynes1923}
+Keynes, J.~M. (1923).
+\newblock \textit{A Tract on Monetary Reform}.
+\newblock Macmillan.
+
+\bibitem[Keynes(1925)]{Keynes1925}
+Keynes, J.~M. (1925).
+\newblock \textit{The Economic Consequences of Mr.~Churchill}.
+\newblock Hogarth Press.
+
+\bibitem[Keynes(1930)]{Keynes1930}
+Keynes, J.~M. (1930).
+\newblock \textit{A Treatise on Money}. 2 vols.
+\newblock Macmillan.
+
+\bibitem[Keynes(1936)]{Keynes1936}
+Keynes, J.~M. (1936).
+\newblock \textit{The General Theory of Employment, Interest and Money}.
+\newblock Macmillan.
+
+\bibitem[Keynes(1943)]{Keynes1943}
+Keynes, J.~M. (1943).
+\newblock Proposals for an international clearing union.
+\newblock \textit{British Government White Paper}, Cmd.\ 6437.
+
+\bibitem[Laidler(1984)]{Laidler1984}
+Laidler, D. (1984).
+\newblock Misconceptions about the real-bills doctrine: A comment on Sargent
+  and Wallace.
+\newblock \textit{Journal of Political Economy} 92(1), 149--155.
+
+\bibitem[Lucas(1992)]{Lucas1992}
+Lucas, R.~E. (1992).
+\newblock On efficiency and distribution.
+\newblock \textit{Economic Journal} 102(411), 233--247.
+
+\bibitem[Mints(1945)]{Mints1945}
+Mints, L.~W. (1945).
+\newblock \textit{A History of Banking Theory in Great Britain and the United
+  States}.
+\newblock University of Chicago Press.
+
+\bibitem[Mises(1949)]{Mises1949}
+Mises, L.~von (1949).
+\newblock \textit{Human Action: A Treatise on Economics}.
+\newblock Yale University Press.
+
+\bibitem[Nurkse(1944)]{Nurkse1944}
+Nurkse, R. (1944).
+\newblock \textit{International Currency Experience: Lessons of the Interwar
+  Period}.
+\newblock League of Nations.
+
+\bibitem[Ricardo(1810)]{Ricardo1810}
+Ricardo, D. (1810).
+\newblock \textit{The High Price of Bullion, A Proof of the Depreciation of
+  Bank Notes}.
+\newblock John Murray.
+
+\bibitem[Ricardo(1816)]{Ricardo1816}
+Ricardo, D. (1816).
+\newblock \textit{Proposals for an Economical and Secure Currency: With
+  Observations on the Profits of the Bank of England}.
+\newblock John Murray.
+
+\bibitem[Salerno(1982)]{Salerno1982}
+Salerno, J.~T. (1982).
+\newblock The gold standard: An analysis of some recent proposals.
+\newblock \textit{Cato Policy Analysis} 16.
+
+\bibitem[Sargent(1982)]{Sargent1982unpleasant}
+Sargent, T.~J. (1982).
+\newblock The ends of four big inflations.
+\newblock In R.~E. Hall (Ed.), \textit{Inflation: Causes and Effects}.
+  University of Chicago Press.
+
+\bibitem[Sargent(2011)]{Sargent2011}
+Sargent, T.~J. (2011).
+\newblock Evolution or revolution?
+\newblock \textit{American Economic Review} 101(3), 1--27.
+
+\bibitem[Sargent and Wallace(1982)]{SargentWallace1982}
+Sargent, T.~J. and N.~Wallace (1982).
+\newblock The real-bills doctrine versus the quantity theory: A
+  reconsideration.
+\newblock \textit{Journal of Political Economy} 90(6), 1212--1236.
+
+\bibitem[Smith(1776)]{Smith1776}
+Smith, A. (1776).
+\newblock \textit{An Inquiry into the Nature and Causes of the Wealth of
+  Nations}. 2 vols.
+\newblock Strahan and Cadell.
+
+\bibitem[Thornton(1802)]{Thornton1802}
+Thornton, H. (1802).
+\newblock \textit{An Enquiry into the Nature and Effects of the Paper Credit of
+  Great Britain}.
+\newblock Hatchard.
+
+\bibitem[Triffin(1960)]{Triffin1960}
+Triffin, R. (1960).
+\newblock \textit{Gold and the Dollar Crisis: The Future of Convertibility}.
+\newblock Yale University Press.
+
+\bibitem[Volcker and Gyohten(1992)]{Volcker1992}
+Volcker, P. and T.~Gyohten (1992).
+\newblock \textit{Changing Fortunes: The World's Money and the Threat to
+  American Leadership}.
+\newblock Times Books.
+
+\end{thebibliography}
+
+\end{document}
