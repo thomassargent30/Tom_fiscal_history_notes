@@ -1,0 +1,725 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\title{Summary of ``Institution Building without Commitment'' \\
+\large Bassetto, Huo, and R\'ios-Rull (\textit{American Economic Review}, 2024)}
+\author{Notes prepared by Thomas J.\ Sargent and Claude}
+\date{March 2026}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\bigskip
+
+\section{Overview}
+
+\citet{bassetto2024institution} propose a theory of \emph{gradualism} in the implementation of
+desirable policies.  The central puzzle they address is: why are many policies that experts
+widely agree are beneficial---carbon taxes to address climate change, reductions in
+trade barriers, and even extensions of civil rights---adopted slowly rather than
+implemented all at once?
+
+Their answer centers on environments featuring \emph{time inconsistency}: because
+good policies typically impose short-run costs in exchange for long-run benefits,
+the current policymaker always prefers to delegate the costly initial steps to
+future policymakers.  The paper introduces a new equilibrium concept---\textbf{organizational
+equilibrium}---designed to capture the gradual emergence of cooperation among a
+sequence of decision-makers, each of whom faces the temptation to delay.  The
+equilibrium generates policy paths that gradually transit toward an allocation
+that weighs both short- and long-run concerns, stopping short of the first-best
+(Ramsey) outcome but substantially improving upon the myopic predictions of
+Markov equilibria.
+
+The paper applies the theory to two major contemporary policy challenges: the
+slow emergence of carbon taxes and the decades-long reduction of global tariff
+rates.
+
+
+\section{The Substantive Issue: Gradualism}
+
+\subsection{The Core Tension}
+
+Many policy environments share a common structure: implementing a good policy
+today imposes immediate costs on some agents, while the benefits accrue in the
+future.  Examples include:
+\begin{itemize}
+  \item \textbf{Climate change:} Reducing carbon emissions requires costly adjustments
+    to production and energy use today, while the benefits of a cooler planet are
+    enjoyed by future generations.
+  \item \textbf{Trade liberalization:} Lowering tariffs improves long-run allocative
+    efficiency and capital accumulation, but workers in import-competing sectors suffer
+    immediate wage losses.
+  \item \textbf{Civil rights, European integration:} Institution-building requires
+    current sacrifices for diffuse future benefits.
+\end{itemize}
+
+When policymakers are short-sighted---either because they have shorter horizons
+than the population at large, or because a utilitarian planner aggregates
+heterogeneous discount rates \citep{jackson2014present,jackson2015collective}---a
+\emph{time inconsistency} problem arises.  The ``quasi-geometric'' or
+$(\beta,\delta)$-discounting framework \citep{strotz1956myopia, phelpspollak1968,
+laibson1997golden} captures this through a discount function of the form
+\[
+  1,\; \delta\beta,\; \delta\beta^2,\; \delta\beta^3,\;\ldots
+\]
+with $\delta < 1$, so that the first period's consumption is weighted more heavily
+relative to all future periods.  Each period's decision-maker would like
+\emph{future} decision-makers to behave cooperatively (e.g., save more, tax carbon
+more, lower tariffs), but is herself tempted to free-ride on future cooperation.
+
+\subsection{Why Not Immediate Reform?}
+
+Under \emph{commitment} (the Ramsey solution), the period-0 agent can impose an
+entire path of future actions.  This typically yields an allocation where the
+initial decision-maker ``front-loads'' the benefits of her privileged position:
+she consumes more (saves less, taxes carbon less) in period~0 and then imposes a
+desirable path on all successors.  This treats the initial decision-maker as
+special---she gets a better deal than any successor.
+
+The opposite extreme is a \emph{Markov equilibrium}, in which each
+decision-maker plays a best response to the strategies of successors, conditioning
+only on payoff-relevant state variables.  This yields a constant (typically
+myopic) policy that fails to internalize any long-run benefits.
+
+Bassetto, Huo, and R\'ios-Rull argue that \emph{neither} benchmark is
+satisfactory.  The Ramsey outcome gives too much power to the initial
+decision-maker.  The Markov equilibrium is too pessimistic, ignoring the
+possibility that cooperation can be sustained even without commitment.  What
+actually happens in practice---gradual improvement---lies between these
+extremes.
+
+
+\section{Organizational Equilibrium: The Formal Framework}
+
+\subsection{The Environment}
+
+The paper studies economies with a sequence of decision-makers (``governments,''
+``selves,'' or ``generations'') indexed by time.  There is a physical state
+variable $k \in K$ evolving according to $k_{t+1} = F(k_t, a_t)$, where
+$a_t \in A$ is the action chosen by the period-$t$ agent.  Period-$t$
+preferences are given by $U(k_t, a_t, a_{t+1}, a_{t+2}, \ldots)$.
+
+A key technical assumption is \textbf{weak separability}: the total payoff
+decomposes as
+\[
+  U(k_t, a_t, a_{t+1}, \ldots) = v\bigl(k_t,\; V(a_t, a_{t+1}, \ldots)\bigr),
+\]
+where $v$ is strictly increasing in its second argument.  The ``action payoff''
+$V$ depends only on the sequence of actions, not on the state.  This structure
+ensures that preferences over action sequences are independent of the
+inherited state, making welfare comparisons across periods meaningful.
+
+\subsection{The Three Requirements}
+
+Starting from the set of subgame-perfect equilibria, an organizational
+equilibrium is defined by imposing three requirements:
+
+\begin{enumerate}
+  \item \textbf{No Restarting (Symmetry):}  The action payoff
+    $V(a_t, a_{t+1}, \ldots)$ must be the \emph{same} for all periods~$t$ along
+    the equilibrium path, and no other symmetric equilibrium achieves a higher
+    payoff.  Intuitively, no decision-maker receives a more favorable treatment
+    than any other.  This rules out the Ramsey outcome, in which the initial
+    agent enjoys a privileged position.  The condition extends
+    \citeauthor{kocherlakota1996reconsideration}'s (\citeyear{kocherlakota1996reconsideration})
+    notion of ``reconsideration proofness'' to environments with state variables,
+    using weak separability to factor out the state.
+
+  \item \textbf{Optimality:}  Among all symmetric, state-independent equilibria
+    satisfying no-restarting, the organizational equilibrium achieves the highest
+    possible constant action payoff.
+
+  \item \textbf{No Delay:}  The initial agent must not prefer to ``sit out''
+    one period---i.e., play her best one-shot action (the Markov action)---and
+    let the equilibrium process start from the next period.  Formally:
+    \[
+      V(a_0^*, a_1^*, a_2^*, \ldots) \ge V(a, a_0^*, a_1^*, \ldots)
+      \quad \text{for all } a \in A.
+    \]
+    This condition ensures that cooperation cannot be so generous at the start
+    as to tempt the first agent to delay.  It is the key driver of gradualism.
+\end{enumerate}
+
+\subsection{The Alternative Game: Why Period~0 Is Not Special}
+
+The authors provide a game-theoretic micro-foundation in which the no-delay
+condition emerges not as a refinement but as a \emph{requirement for a
+sequential equilibrium}.  They modify the standard game as follows: the actions
+of past players are \emph{unobservable} until an ``organization'' is set up to
+record past play.  The opportunity to establish such record-keeping arrives at a
+stochastic, unobserved time~$\hat t$.  Agent~$\hat t$ can either establish the
+organization (making the history observable to successors) or pass; any future
+agent can also discontinue the organization, erasing history.
+
+In this game, if the no-delay condition were violated, the agent who first has
+the opportunity to establish record-keeping would prefer to ``pass the buck''---
+pretending nothing has happened and hoping that the next agent will start the
+cooperation.  Hence the no-delay condition is necessary for a sequential
+equilibrium, not merely a convenient refinement.
+
+The authors describe this as the ``organization'' interpretation: an ongoing,
+uninterrupted set of agents who choose to go along with a plan rather than set
+up their own organization from scratch.  Governments can ``break with the
+past,'' effectively restarting history.
+
+\subsection{Key Propositions and Characterization}
+
+Under technical assumptions (weak separability, compactness, a recursive
+structure on continuation values), the paper establishes:
+
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Existence} (Proposition~1): An organizational equilibrium exists.
+
+  \item \textbf{Action payoff equals the best constant-action payoff}
+  (Proposition~5(i)): The organizational equilibrium achieves the same payoff as
+  the \emph{best constant action} profile $V(a^*, a^*, a^*, \ldots)$.  This is the
+  action that best balances short- and long-run considerations when held fixed
+  forever.
+
+  \item \textbf{Intermediate welfare} (Proposition~5(ii)): The payoff lies
+  strictly between the Markov equilibrium and the Ramsey outcome (unless there
+  is no time inconsistency).
+
+  \item \textbf{Gradual convergence} (Proposition~5(iii)--(iv)): The continuation
+  value $\hat V(a_t, a_{t+1}, \ldots)$ increases monotonically over time,
+  converging to the best constant-action value.  Convergence is \emph{not
+  immediate}: the initial action differs from the steady-state action.  The
+  speed of convergence slows as the economy approaches the steady state.
+
+  \item \textbf{Recursive computation} (Proposition~4, Corollary~1): The
+  organizational equilibrium can be computed by (a) finding the best constant
+  action~$a^*$ and the associated action payoff~$V^*$, then (b) solving a
+  recursive difference equation backward from~$a^*$ subject to the no-delay
+  condition pinning down the initial action~$a_0$.
+\end{enumerate}
+
+\subsection{Comparison with Other Equilibrium Concepts}
+
+\begin{itemize}
+  \item \textbf{Ramsey:}  Gives the initial agent commitment power; typically
+    features a phase of front-loaded consumption followed by a jump to a
+    permanently high saving rate.  Violates no-restarting: the initial agent
+    gets a higher action payoff than successors.
+
+  \item \textbf{Markov:}  Each agent best-responds myopically.  Satisfies
+    no-restarting and no-delay trivially (constant policy), but yields the
+    lowest payoff.
+
+  \item \textbf{Best subgame-perfect (trigger strategies):}  Can approximate the
+    Ramsey outcome for patient agents (folk theorem), but requires \emph{grim
+    triggers}---reversion to dominated outcomes---to sustain cooperation.  Also
+    violates no-restarting.
+
+  \item \textbf{Organizational:}  Cooperation builds gradually.  The punishment
+    for deviation is proportional---``setting back the clock'' rather than
+    reverting to worst-case outcomes.  No grim triggers required.
+\end{itemize}
+
+
+\section{The Motivating Example: Quasi-Geometric Discounting Growth Model}
+
+The paper introduces the equilibrium concept via a growth model with log utility,
+Cobb-Douglas production $f(k) = k^\alpha$, full depreciation, and
+$(\beta,\delta)$-discounting.
+
+In this model, the ``action'' is the saving rate $s_t = k_{t+1}/k_t^\alpha$, and
+weak separability holds:  the lifetime utility decomposes into
+\[
+  U(k_t, s_t, s_{t+1}, \ldots) = \frac{\alpha(1 - \alpha\beta + \delta\alpha\beta)}{1 - \alpha\beta} \log k_t + V(s_t, s_{t+1}, \ldots).
+\]
+Three benchmarks emerge in closed form:
+\begin{align*}
+  s^M &= \frac{\alpha\delta\beta}{1 - \alpha\beta + \delta\alpha\beta}
+    && \text{(Markov)}, \\
+  s^R &= \alpha\beta
+    && \text{(long-run Ramsey)}, \\
+  s^B &= \frac{\delta\alpha\beta}{(1-\beta+\delta\beta)(1-\alpha\beta) + \delta\alpha\beta}
+    && \text{(best constant saving rate)},
+\end{align*}
+with $s^M < s^B < s^R$ when $\delta \in (0,1)$.
+
+The organizational equilibrium converges to $s^B$.  The transition is governed by
+a difference equation $s_{t+1} = q(s_t; V^*)$, starting from an initial saving
+rate $s_0 = q(s^M; V^*)$ pinned down by no-delay.  The dynamics exhibit:
+\begin{itemize}
+  \item Monotonic increase from $s_0$ toward $s^B$;
+  \item Decreasing speed of convergence as $s_t \to s^B$;
+  \item A constant action payoff $V^*$ along the entire path.
+\end{itemize}
+
+
+\section{Application I: Climate Change Mitigation}
+
+\subsection{Model}
+
+The paper extends the climate-economy model of \citet{golosov2014optimal} by
+introducing quasi-geometric discounting.  Production uses capital, labor, and an
+energy input (coal), with a carbon externality entering through an atmospheric
+carbon stock that damages productivity:
+\[
+  y_t = \exp(-\gamma q_t)\, k_t^\alpha\, n_t^{1-\alpha-\nu}\, e_t^\nu.
+\]
+Carbon accumulates through permanent and persistent components.  The
+policymaker balances a short-sighted politician's bias ($\delta < 1$) against
+the long-run damage from carbon emissions.
+
+A key separability property holds: given an initial state, the payoff decomposes
+additively into a component depending on the state $(k_0, q_{1,-1}, q_{2,-1})$,
+a component $W$ depending on the saving rates, and a component $V$ depending on
+labor allocation to the final-goods sector.  Because the carbon tax~$\Lambda_t$
+is determined by the labor allocation, characterizing the organizational
+equilibrium for labor suffices to characterize the equilibrium path of the
+carbon tax.
+
+\subsection{Steady-State Comparison}
+
+In steady state, the carbon tax under the three equilibrium concepts ranks as:
+\[
+  \Lambda^M < \Lambda^B < \Lambda^R.
+\]
+The Markov carbon tax is the lowest (most myopic); the Ramsey tax fully
+internalizes future damages; the organizational equilibrium tax lies between
+them.
+
+\subsection{Transition Dynamics}
+
+The organizational equilibrium generates a \emph{gradually rising} carbon tax,
+starting from a level near the Markov tax and converging to $\Lambda^B$.  This
+contrasts with the Ramsey outcome, which features a low initial tax followed by
+an abrupt jump, and with the Markov equilibrium, which maintains a constant low
+tax.
+
+\subsection{Historical Evidence}
+
+The paper documents two pieces of empirical evidence consistent with the
+gradualism prediction:
+
+\begin{enumerate}
+  \item \textbf{Scandinavian countries} (Denmark, Finland, Norway, Sweden), the
+    first group to implement carbon taxes, exhibit a gradually increasing trend
+    in (real) carbon tax rates over time.
+
+  \item \textbf{Cross-country evidence:}  After controlling for the quantity
+    of carbon emissions covered and GDP per capita, carbon tax rates are
+    positively correlated with the number of years since implementation
+    (coefficient $\hat\beta_1 = 1.11$, $p$-value~$= 0.017$).
+
+  \item \textbf{China's evolving stance:}  The paper contrasts President
+    Hu~Jintao's 2008 statement prioritizing economic development over
+    environmental policy with President Xi~Jinping's 2020 pledge to reach peak
+    carbon emissions by 2030 and carbon neutrality by 2060.  The shift from
+    reluctance to ambition---still falling short of immediate maximum
+    abatement---embodies the gradualist dynamic.
+\end{enumerate}
+
+More broadly, the succession of international agreements---the UN Framework
+Convention on Climate Change (1992), the Kyoto Protocol (2005), the Paris
+Agreement (2015), and COP28 (2023)---illustrates increasingly ambitious but still
+gradual ratcheting up of emission standards.
+
+
+\section{Application II: Tariff Policies and Trade Liberalization}
+
+\subsection{Model}
+
+The paper constructs a two-country trade model with the following ingredients:
+\begin{itemize}
+  \item Two symmetric countries, each producing two tradeable intermediate goods
+    via capital and sector-specific labor, aggregated into a final good via a CES
+    technology.
+  \item Comparative advantage: country~1 is more productive in good~1, and vice
+    versa.
+  \item No labor mobility across sectors: a tariff shields the importing sector's
+    workers from wage losses.
+  \item An aggregate capital externality drives endogenous growth; a lower tariff
+    raises the return on capital, encouraging capital accumulation and thus
+    long-run growth.
+  \item The policymaker maximizes average worker welfare (utilitarian over both
+    sectors).
+\end{itemize}
+
+The core tension: lowering tariffs hurts sector-2 workers in the short run (they
+face foreign competition) but benefits all workers in the long run through faster
+growth.  Under commitment, the policymaker would always prefer setting higher
+tariffs initially and lower tariffs later---making the problem time-inconsistent.
+
+\subsection{Results}
+
+\begin{itemize}
+  \item The Markov equilibrium features a \emph{constant, high tariff}: the most myopic
+    outcome, where policymakers fail to internalize the growth benefits of free trade.
+  \item The Ramsey outcome features a high initial tariff followed by a rapid elimination
+    of tariffs---exploiting the commitment power of the initial policymaker.
+  \item The organizational equilibrium features a \emph{gradual decline} in tariffs,
+    starting from an intermediate level and converging to a low (but positive)
+    steady-state tariff rate.
+\end{itemize}
+
+For workers in the importing sector, the organizational equilibrium initially
+delivers lower consumption than the Markov equilibrium (due to the lower tariff),
+but eventually delivers higher consumption because the lower tariff path
+stimulates greater capital accumulation and growth.
+
+\subsection{Historical Evidence}
+
+The paper documents the gradual decline in world average tariff rates from
+approximately 16\% in 1950 to about 4\% in 2017, based on data from
+\citet{antras2020}.  The institutional mechanism---successive rounds of GATT
+negotiations, culminating in the formation of the WTO---mirrors the gradualist
+logic of the organizational equilibrium.
+
+The paper notes a particularly attractive property for analyzing trade
+disruptions:  after a ``tremble'' in which a government unexpectedly raises
+tariffs, the organizational equilibrium does \emph{not} require grim-trigger
+punishment.  Instead, the gradual march toward cooperation simply resumes from
+the new, worse starting point.  The authors view this as a useful framework for
+analyzing episodes such as the reimposition of tariffs that did not lead to
+all-out trade wars but rather to negotiations restarting to undo newly introduced
+barriers.
+
+
+\section{Connections to Other Equilibrium Refinements}
+
+The organizational equilibrium is closely related to several strands of the
+literature on equilibrium refinements in dynamic games:
+
+\begin{itemize}
+  \item \textbf{Reconsideration proofness} \citep{kocherlakota1996reconsideration}:
+    In purely repeated games (no state variable), the no-restarting condition
+    reduces to Kocherlakota's symmetry requirement.  Bassetto et~al.\ extend
+    this to dynamic games with state variables by using weak separability to
+    factor out the state and comparing only the action payoff~$V$.
+
+  \item \textbf{Revision proofness} \citep{asheim1997,alessleet2014}: Under
+    revision proofness, the set of credible punishments is larger because a
+    deviating player must propose alternatives that benefit \emph{all} future
+    players.  This leads to a much larger equilibrium set (for quasi-geometric
+    discounting with linear preferences, all subgame-perfect paths better than
+    Markov are revision-proof).
+
+  \item \textbf{Recursive Pareto criterion} \citep{brendonellison2018}: Brendon
+    and Ellison restrict the Ramsey planner to sequences satisfying a recursive
+    Pareto criterion.  Their steady-state allocation coincides with the
+    organizational equilibrium's limiting allocation, but their motivation is
+    normative whereas Bassetto et~al.'s is positive.
+
+  \item \textbf{APS value-set methods} \citep{abreu1990}: Proposition~4 uses
+    continuation values as a state variable, similar to APS, but the symmetry
+    constraint (all continuation equilibria share the same value) complicates
+    the standard monotone iteration procedure.
+\end{itemize}
+
+
+\section{Broader Historical Motivation}
+
+The conclusion of the paper invokes a broad set of historical parallels.  The
+authors cite \citet{sargent2017honoring} and
+\citet{hallsargent2014,hallsargent2018} on the gradual process by which the
+United States acquired a reputation for honoring its debts.  They also note the
+post-1970s emergence of low inflation as governments ``gradually learned how to
+manage monetary policy without resorting to the anchor of a commodity standard.''
+Social Security, which ``started as a narrow and limited program and only later
+grew in size and scope,'' provides yet another example.
+
+The paper suggests two additional applications for future research:
+\begin{itemize}
+  \item \textbf{The extension of civil rights} in the United States after the
+    Civil War.
+  \item \textbf{The gradual creation of the European Union}, echoing the
+    Schumann Declaration of 1950 that opens the paper: ``Europe will not be made
+    all at once, or according to a single plan.  It will be built through
+    concrete achievements which first create a de facto solidarity.''
+\end{itemize}
+
+In each of these cases, the organizational equilibrium provides a lens through
+which a good institution gradually emerges (unlike in a Markov equilibrium) but
+remains imperfect (worse than Ramsey).  The equilibrium concept captures the idea
+that ``Rome was not built in a day.''
+
+
+\section{The Gradual Acquisition of US Fiscal Credibility}
+
+Bassetto, Huo, and R\'ios-Rull cite \citet{sargent2017honoring} and
+\citet{hallsargent2014,hallsargent2018} on the slow process by which the
+United States acquired a reputation for honoring its debts.  This section
+expands on that subtheme, tracing the gradualist logic through a sequence
+of 19th-century episodes that together illustrate how fiscal credibility
+was built---and occasionally threatened---without the benefit of
+credible commitment.
+
+\subsection{Hamilton's Founding Settlement (1790)}
+
+The United States began its existence under a fiscal cloud.  The
+Continental Congress and individual states had accumulated roughly
+\$79~million in debts from the Revolutionary War---domestic loan-office
+certificates, final-settlement certificates, Quartermaster and
+Commissary certificates, foreign loans from France and the
+Netherlands---many trading at 15--25 cents on the dollar
+\citep[pp.~271--275]{Ferguson1961}.  Under the Articles of Confederation,
+the national government lacked the taxing power to service these
+obligations, and several states had begun their own assumption programs,
+creating competing creditor constituencies attached to state governments
+rather than to the union \citep[pp.~237--239]{Ferguson1961}.
+
+Alexander Hamilton's \textit{First Report on the Public Credit} (January
+1790) proposed a comprehensive restructuring: fund the Continental debt
+at par, assume approximately \$25~million in state war debts, and service
+the consolidated federal debt out of tariff and excise revenues
+\citep{Hamilton1790}.  Three elements of Hamilton's plan are especially
+relevant to the gradualism framework:
+
+\begin{enumerate}
+  \item \textbf{Rejection of discrimination.}  James Madison proposed
+    paying current holders only the prevailing market price and
+    distributing the remainder to original holders (soldiers, farmers,
+    suppliers).  Hamilton opposed discrimination on the ground that it
+    would destroy the transferability of government securities and
+    thereby undermine the liquid public-debt market he sought to create.
+    Paying current holders at par established a precedent:\ US federal
+    securities were fully transferable claims, serviced without regard to
+    the identity of the holder.  This was the \emph{initial action} in a
+    long sequence---costly to taxpayers in the short run, but essential
+    for establishing the credibility of federal debt.
+
+  \item \textbf{The sinking fund as commitment device.}  Hamilton
+    complemented assumption with a sinking fund (Act of August~12, 1790)
+    governed by a board of commissioners including the Vice President,
+    the Chief Justice, and the Secretary of the Treasury.  By earmarking
+    surplus revenues for debt retirement and placing the fund under
+    high-profile governance, Hamilton made it politically costly for
+    future Congresses to divert debt-service revenues. In the language
+    of organizational equilibrium, this was an institutional arrangement
+    designed to raise the cost of ``restarting''---i.e., reneging on the
+    cooperative path.
+
+  \item \textbf{Assumption as equilibrium selection.}  Hamilton's plan
+    was not merely a generous bailout; it was a strategic move to win a
+    competition for creditor allegiance against state governments that
+    had been pursuing their own assumption programs under the Articles
+    of Confederation \citep{Ferguson1961, Rothbard2019}.  The Compromise
+    of 1790---exchanging votes for assumption for the location of the
+    national capital on the Potomac---illustrates the political
+    side-payments required to shift from a state-dominant to a
+    federal-dominant fiscal equilibrium.
+\end{enumerate}
+
+Hamilton's settlement was not the Ramsey outcome: he could not commit
+future Congresses to maintain the sinking fund, nor could he prevent the
+political temptation to inflate away the debt.  But it was far better than
+the Markov equilibrium that had prevailed under the Confederation, where
+each state and the national government acted myopically, and public debt
+traded at deep discounts for want of any credible commitment to service
+it.
+
+\subsection{Gallatin and Jeffersonian Validation (1801--1812)}
+
+A critical test of Hamilton's institutional design came when political power
+transferred to his opponents.  Thomas Jefferson's Treasury Secretary,
+Albert Gallatin, entered office intending to dismantle much of Hamilton's
+fiscal-military state---yet he preserved and even strengthened the
+commitment to debt service.  Gallatin systematically applied surplus
+revenues to retire the federal debt, reducing it from \$83~million in 1801
+to \$45~million by 1812 \citep{balack2012gallatin}.  The fact that a
+Jeffersonian administration---ideologically hostile to Hamilton's
+program---nonetheless honored the debt and used surpluses to retire it
+was a powerful signal.  In the organizational-equilibrium framework, this
+corresponds to the second and third movers along the equilibrium path
+choosing to continue the cooperative sequence rather than ``restarting''
+with a deviation.
+
+\subsection{The War of 1812 and Subsequent Retirement}
+
+The War of 1812 forced the US government back into heavy borrowing, much
+of it on unfavorable terms: Congress had allowed the First Bank of the
+United States' charter to expire in 1811, weakening the institutional
+infrastructure for debt management.  Borrowing costs rose sharply,
+especially after British victories in 1814 \citep{hallsargent2014}.
+
+Yet the postwar period demonstrated the resilience of the gradualist
+path.  Under successive administrations, the federal government applied
+surplus tariff revenues to systematic debt retirement, achieving the
+remarkable feat of paying off the entire national debt by January~1835.
+Andrew Jackson's Treasury Secretary announced that every dollar of the
+federal debt had been extinguished---the only time a major nation has
+achieved this.  Whatever one's assessment of the wisdom of eliminating
+the national debt entirely (Hamilton would not have approved, since he
+valued a moderate funded debt as a source of financial-market liquidity),
+the episode powerfully reinforced the credibility of the US government's
+commitment to honor its obligations.
+
+\subsection{The 1840s State Debt Crisis: A Clarifying Test}
+
+The state debt crisis of the early 1840s was a critical juncture
+\citep{Ratchford1941, McGrane1935}.  Nine states defaulted on debts
+incurred during the 1830s infrastructure boom, and several repudiated
+portions of their debt entirely (Arkansas, Florida, Michigan,
+Mississippi).  European bondholders, invoking the 1790 precedent,
+demanded that the federal government assume the defaulted state debts.
+
+Congress refused.  The refusal was costly in the short run: European
+creditors temporarily downgraded all American government bonds, raising
+federal borrowing costs.  But it was immensely consequential for the
+long-run structure of American fiscal credibility:
+
+\begin{itemize}
+  \item It clarified that the 1790 assumption had been a one-time
+    constitutional settlement, not a permanent insurance scheme.
+  \item It  established a credible no-bailout norm, avoiding the
+    moral-hazard problem that \citet{KarekenWallace1978} later
+    formalized.
+  \item It triggered state-level constitutional reforms---balanced-budget
+    requirements, debt ceilings, voter-approval provisions for new
+    borrowing---that persist to this day \citep{Wallis2005}.
+  \item Over subsequent years, creditors learned to distinguish
+    sharply between federal bonds (which had never defaulted) and state
+    bonds (which carried real default risk).
+\end{itemize}
+
+In the organizational-equilibrium framework, Congress's refusal
+illustrates how a deviation (state defaults) does not trigger a
+grim-trigger reversion to the worst outcome; instead, the federal
+government's own cooperative path continues, while the defaulting states
+are ``set back''---they must rebuild credibility through costly
+constitutional constraints on their own borrowing.
+
+\subsection{Civil War Finance: Statutory vs.\ Reputational Commitment}
+
+The Civil War pushed the federal government into the most drastic fiscal
+measures since the Revolution: the Legal Tender Act of February~25, 1862,
+authorized \$150~million in fiat ``greenbacks'' and the issuance of 5--20
+bonds (redeemable after five years, maturing in twenty).  A revealing
+feature of this legislation, documented by \citet{hallsargent2014}, is
+the \emph{hybrid commitment structure} that sustained borrowing:
+
+\begin{itemize}
+  \item \textbf{Statutory commitment for interest:} Section~5 of the Legal
+    Tender Act required import duties to be paid in coin and earmarked
+    that coin first for interest payments on bonds and notes.
+  \item \textbf{Reputational commitment for principal:} The statute was
+    entirely silent on whether bond \emph{principal} would be repaid in
+    coin or greenbacks.  Treasury Secretary Salmon P.~Chase bridged this
+    gap through marketing: his bond circulars and Jay Cooke's network of
+    2,500 agents sold the 5--20s on the understanding that principal
+    would be repaid in gold.
+\end{itemize}
+
+This hybrid structure is a vivid instance of gradualism under imperfect
+commitment.  The government could not formally commit to gold repayment
+of principal---the political coalition for the Legal Tender Act would not
+have held---but it could build a \emph{reputational} expectation through
+the actions of the current Treasury Secretary.  When the postwar Congress
+debated the ``Ohio Idea'' (paying off 5--20 bonds in greenbacks rather
+than gold), the reputational commitment was tested.  The Public Credit
+Act of 1869, pledging the government to ``payment in coin or its
+equivalent'' of all US obligations, converted Chase's extra-statutory
+promise into durable statutory form---a further step along the
+organizational-equilibrium path.
+
+\subsection{Resumption of Specie Payments (1879)}
+
+The Resumption Act of 1875, which committed the Treasury to redeeming
+greenbacks in gold beginning January~1,~1879, completed the postwar
+restoration of fiscal credibility.  The fourteen-year gap between the
+suspension of convertibility (1861) and the legislated return to gold
+(1875), followed by a further four-year implementation lag, is itself an
+illustration of gradualism.  Each Congress along the way faced the
+temptation to delay---resumption imposed real costs on debtors and
+inflationists---but the succession of administrations (Johnson, Grant,
+Hayes) ultimately moved, slowly and imperfectly, toward the hard-money
+equilibrium.
+
+\subsection{Summary: Gradualism as a Running Theme}
+
+The 19th-century American fiscal experience can be read as a sequence of
+steps along an organizational-equilibrium path:
+
+\begin{center}
+\begin{tabular}{lp{10cm}}
+  \textbf{1790} & Hamilton's funding and assumption: the initial action
+    $a_0$ that started the cooperative sequence, at a level below the
+    Ramsey ideal (no commitment of future Congresses) but far above
+    the Confederation's Markov equilibrium. \\[4pt]
+  \textbf{1801--12} & Jeffersonian validation: successors continue the
+    cooperative path rather than restarting. \\[4pt]
+  \textbf{1815--35} & Postwar debt retirement: the saving rate gradually
+    rises, reinforcing credibility. \\[4pt]
+  \textbf{1842} & State debt crisis and federal refusal to assume:
+    proportional punishment (states are set back) without grim-trigger
+    reversion; no-bailout norm clarified. \\[4pt]
+  \textbf{1862--65} & Civil War: hybrid statutory/reputational commitment
+    under fiscal stress. \\[4pt]
+  \textbf{1869} & Public Credit Act: reputational commitment converted to
+    statutory form. \\[4pt]
+  \textbf{1875--79} & Resumption: gradualist return to specie
+    convertibility. \\[4pt]
+\end{tabular}
+\end{center}
+
+No single episode corresponds to a ``big bang'' in which the United States
+leapt to the Ramsey outcome.  Nor did the process proceed smoothly: the
+Civil War was a massive shock that temporarily set back the cooperative
+path.  But the organizational-equilibrium logic captures the essential
+pattern: each successive decision-maker inherited a partially built
+institution, found it (weakly) in her interest to continue rather than
+restart, and left the institution slightly stronger for the next
+decision-maker.  The limiting allocation---a government that could borrow
+on terms comparable to Britain's, the gold standard of sovereign
+credibility---was approached gradually and imperfectly, exactly as
+Bassetto, Huo, and R\'ios-Rull's theory predicts.
+
+
+\section{Assessment and Relation to Fiscal History}
+
+\subsection{What the Paper Achieves}
+
+\begin{enumerate}
+  \item It offers a \emph{positive theory} of gradualism that is grounded in rigorous
+    game theory but amenable to computation: the equilibrium can be found by
+    solving a recursive difference equation, much as competitive equilibria are
+    computed in standard macroeconomics.
+
+  \item It dispenses with \emph{grim triggers}: punishments for deviation are
+    proportional (``set back the clock''), making the equilibrium robust to
+    trembles and stochastic shocks.
+
+  \item It delivers \emph{clear comparative statics}: unlike the folk-theorem
+    multiplicity of subgame-perfect equilibria, the organizational equilibrium
+    provides a sharp prediction.
+
+  \item The two quantitative applications---carbon taxes and tariffs---show that
+    the theory's qualitative predictions (gradual improvement, convergence to an
+    intermediate steady state) align with observed data.
+\end{enumerate}
+
+\subsection{Relevance for Fiscal History}
+
+The organizational equilibrium framework has natural applications to fiscal
+history:
+\begin{itemize}
+  \item The slow building of sovereign creditworthiness, as documented by
+    \citet{sargent2017honoring} and \citet{hallsargent2014,hallsargent2018} for
+    the United States.
+  \item The gradual evolution of fiscal institutions (debt limits, balanced-budget
+    rules, the separation of capital and ordinary budgets studied in
+    \citealt{bassettosargent2006}).
+  \item The post-WWII development of international monetary institutions, where
+    successive agreements (Bretton Woods, its collapse, the Plaza Accord, the
+    adoption of the euro) can be read as gradual, imperfect institution-building.
+\end{itemize}
+
+The paper's key insight---that a succession of self-interested policymakers can
+build institutions gradually even without commitment, but that the resulting
+institutions will always fall short of the first-best---resonates deeply with
+the themes of fiscal history.
+
+
+\bibliographystyle{plainnat}
+\bibliography{bassetto_et_al_summary}
+
+\end{document}
