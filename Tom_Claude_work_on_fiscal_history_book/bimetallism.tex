@@ -1,0 +1,554 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[margin=1.25in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{setspace}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{natbib}
+\usepackage{amsmath}
+
+\onehalfspacing
+
+\title{French and American Bimetallism in the Nineteenth Century:\\
+Mint Ratios, Coinage Data, and the Road to 1873}
+
+\author{}
+\date{March 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This note summarizes the operation of France's bimetallic currency system from 1803
+to 1873, the legal and institutional framework that sustained it, and what is known
+about the time-series of gold and silver coinage at the French mints.  It then
+describes the parallel evolution of mint ratios at the United States Mint from 1792
+to 1873, including the pivotal change enacted in the Coinage Act of 1834.  A final
+section asks whether earlier and persistent coordination of the American and French
+mint ratios at 15.5:1 would have produced a more robust bimetallic system.  The
+answer the literature provides is nuanced: a US ratio permanently aligned with
+France's 15.5:1 would have enlarged the bimetallic buffer in the critical decades of
+the 1850s--1870s, but the secular rise in silver production after 1870 would
+eventually have tested even an enlarged Franco-American bimetallic bloc.
+\end{abstract}
+
+\tableofcontents
+
+\bigskip
+
+%---------------------------------------------------------------------
+\section{The Legal Foundation of French Bimetallism, 1803--1873}
+%---------------------------------------------------------------------
+
+\subsection{The Law of 7 Germinal An~XI (28 March 1803)}
+
+France's bimetallic system rested on a single statutory instrument.  The Law of
+7~Germinal An~XI, passed on 28~March 1803 under Napoleon as First Consul, defined
+the franc Germinal in terms of both metals simultaneously:
+\begin{align}
+  1\text{ franc} &= 4.500 \text{ g fine silver}, \label{eq:silver}\\
+  1\text{ franc} &= 0.2903 \text{ g fine gold}. \label{eq:gold}
+\end{align}
+Dividing \eqref{eq:silver} by \eqref{eq:gold} gives the statutory \emph{mint
+ratio}---the number of grams of silver legally equivalent to one gram of gold:
+\begin{equation}
+  \rho_{\mathrm{FR}} = \frac{4.500}{0.2903} = 15.5. \label{eq:ratio}
+\end{equation}
+Equivalently, the law set the mint price of silver at 200 francs per kilogram
+(at 90\% fineness) and of gold at 3{,}100 francs per kilogram (at 90\%
+fineness)~\citep{wiegand2023}.  The ratio 15.5:1 had already been used for French
+coinage since at least 1785~\citep{wikipedia_bimetallism} and was close to the
+world market ratio in 1803.
+
+\textbf{The ratio was never changed.}  From its enactment in 1803 until France
+suspended free silver coinage in September 1873---a span of seventy years---the
+statutory mint ratio remained fixed at 15.5:1~\citep{oppers2000,flandreau2004}.
+No law adjusted it.  The entire burden of adjustment to changing world bullion
+markets was borne by changes in the \emph{composition} of France's coin
+circulation, not by changes in the price.
+
+\subsection{Free Coinage and the Role of the Mints}
+
+The law granted any member of the public the right to bring gold or silver bullion
+to a government mint, have it assayed, and receive coins at the statutory price,
+subject only to a small seigniorage charge to cover minting costs.  This
+\emph{frappe libre} (free coinage) was the operational core of the system.  It
+applied symmetrically to both metals.
+
+The primary coinage facility was the Monnaie de Paris (Paris Mint), with provincial
+mints in Bordeaux, Lyon, Strasbourg, and several other cities also active at
+various times during the period.  The institutional division of responsibility
+should be noted: the Bank of France, founded in 1800, held a monopoly on banknote
+issue after 1848 and maintained large metallic reserves that backed its notes, but
+the \emph{coinage terms}---who could bring metal, at what price, in what
+denominations---were fixed by law and administered through the Ministry of Finance
+and the Monnaie de Paris administration.  The Bank of France was not itself the
+authority that set or enforced the mint ratio~\citep{ans2014}.
+
+\citet{oppers2000} emphasizes the key mechanical point: the mints did not trade gold
+for silver directly and did not attempt to fix the relative price of the two metals
+through market operations.  They simply coined whatever bullion was presented to
+them.  The relative price between gold and silver was sustained indirectly, through
+the public's arbitrage between the mint and the bullion market.  If the market ratio
+rose above 15.5, silver became cheap relative to the mint price of silver coins;
+individuals would bring silver to the mint, expand the silver coin supply, and
+export gold---exactly Gresham's law in action.  The converse applied when the market
+ratio fell below 15.5.
+
+\subsection{Denominations and the 1864 Partial Debasement}
+
+The law of 1803 authorized gold coins in denominations of 20 and 40 francs (with 5,
+10, 50, and 100 franc gold pieces added over subsequent decades), and silver coins of
+5, 2, 1, and smaller denominations.  The workhorse gold coin was the 20-franc
+Napoleon, first struck on 28~March 1803: weight 6.45161~g, fineness
+0.900, hence containing 5.80645~g of fine gold.  Approximately 500 million 20-franc
+gold coins were minted over the period 1803--1914~\citep{thomasnumismatics}.
+
+A partial qualification of full bimetallism occurred in 1864, when all silver coins
+\emph{except} the 5-franc piece were debased from 900\textperthousand{} to
+835\textperthousand{} silver without changing their weights.  This converted
+subsidiary silver (1F, 2F, 50~centimes, 20~centimes) into token coins whose face
+value exceeded their bullion value; only the 5-franc coin remained a full-weight
+commodity coin~\citep{wikipedia_frenchfranc}.  The formal 15.5 ratio continued to
+apply to the 5-franc coin and to gold coinage.
+
+\subsection{The Latin Monetary Union, 1865}
+
+France extended its mint regime internationally by spearheading the Latin Monetary
+Union (LMU), founded by treaty on 23~December 1865 among France, Belgium, Italy,
+and Switzerland (Greece joined in 1867).  The LMU adopted the French specification
+as the common standard: the same 15.5:1 bimetallic ratio, with the five-franc silver
+coin at 900\textperthousand{} fineness and fractional silver at
+835\textperthousand{}~\citep{wikipedia_lmu}.  The LMU took effect on
+1~August~1866.
+
+%---------------------------------------------------------------------
+\section{Gresham's Law and the Three Phases of French Bimetallism}
+%---------------------------------------------------------------------
+
+The fixed 15.5 ratio interacted with a market ratio that varied over time.  The
+theory is straightforward: whichever metal is undervalued at the mint (i.e., worth
+more in bullion than the implied mint price) will be exported; whichever is
+overvalued will be imported and coined in large quantities.  France in practice
+cycled through three broad phases.
+
+\paragraph{Phase 1 (1803--c.1848): Silver dominates; gold exported.}
+From 1803 until around 1848, the world market ratio lay mostly above 15.5,
+meaning gold was undervalued at the French mint relative to its bullion value.
+French citizens exported gold and brought silver to the mint.  France was for most
+of this period effectively on a \emph{de facto} silver standard, even though the
+legal system permitted gold coinage.
+
+\paragraph{Phase 2 (1848--c.1866): Gold dominates; silver exported.}
+The California Gold Rush of 1848--1855 and the subsequent Australian discoveries
+flooded world markets with gold and depressed its relative price.  The market ratio
+fell below 15.5, making silver the dearer metal and triggering its export---
+principally to India, which absorbed large quantities of silver throughout the 1850s
+and 1860s.  France imported gold on an enormous scale, absorbing an estimated two-fifths of world
+gold production between 1848 and 1870~\citep{wikipedia_bimetallism}.  By the 1850s
+France was effectively on a gold standard in practice.
+
+\paragraph{Phase 3 (1866--1873): Silver returns; gold begins to leave.}
+As the initial wave of Californian and Australian production was absorbed, and as
+global demand for silver (particularly in Asia) remained high, the market ratio
+crept back above 15.5 after 1866.  Silver again began flowing into France and gold
+flowed out---a reversal that intensified just as Germany was preparing its currency
+reform.
+
+Despite these large compositional swings, the market ratio remained remarkably
+stable.  \citet{oppers2000} documents that over the fifty years from 1823 to 1873,
+the world market ratio never departed more than about 6 percent from the French mint
+ratio of 15.5, despite major fluctuations in the relative supplies of gold and
+silver.  This remarkable stabilization is the central empirical puzzle addressed by
+the target-zone models of \citet{oppers1995}, \citet{oppers2000}, and
+\citet{velde_weber2000}.  The bimetallic mint ratio acted as a pair of barriers (an
+upper and lower band) that the market ratio could not breach for long, because
+profitable arbitrage would immediately be activated.
+
+%---------------------------------------------------------------------
+\section{Annual Coinage at the French Mints: Data Sources}
+%---------------------------------------------------------------------
+
+The mint ratio itself---15.5:1---was constant throughout 1803--1873, so there is no
+time series on the \emph{ratio}.  What varied dramatically from year to year was how
+much gold versus silver was coined.  Several quantitative snapshots are available
+from secondary sources, but the full annual series require consulting the
+specialized monographic literature.
+
+\subsection{Known Quantitative Evidence}
+
+The clearest quantitative illustration of the regime's dynamics comes from the
+silver-inflow data around the break-point of 1873.  \citet{wikipedia_lmu} reports
+that in all of 1871 and 1872 combined the French mint received only 5~million francs
+worth of silver for coinage; in 1873 alone it received 154~million francs---a
+roughly thirty-fold increase reflecting the collapse of the market ratio and the
+looming threat that Germany would unload its silver onto the French bimetallic
+buffer.
+
+For the gold-inflow phase, the scale was also very large.  During the decade
+1848--1858, French gold coinage ran at historically unprecedented rates as Californian
+and Australian gold flooded in; France accumulated close to 40 percent of world gold
+production over the 1848--1870 period as a whole~\citep{wikipedia_bimetallism}.
+
+\subsection{Primary Data Sources in the Literature}
+
+The authoritative sources for annual mint-output and specie-stock data are as
+follows.
+
+\begin{enumerate}
+  \item \textbf{\citet{flandreau2004}}, Chapter~4, ``Coin Memories: New Estimates
+  of France's Specie Stock (1840 to 1878),'' and the associated appendix tables.
+  This is the most comprehensive reconstruction of annual French mint output and
+  the decomposition of the specie stock into gold and silver, drawing on French
+  archival material.  An earlier version of the same estimates appeared in
+  \citet{flandreau1995}.
+
+  \item \textbf{\citet{sicsic1989}}, ``Estimation du stock de monnaie m\'etallique
+  en France \`a la fin du XIX\textsuperscript{e} si\`ecle,'' \textit{Revue
+  \'economique}.  This is the standard reference for metallic money stocks in
+  late-nineteenth-century France and is cited by virtually every quantitative
+  paper in the literature.
+
+  \item \textbf{\citet{velde_weber2000}}, whose data appendix reconstructs annual
+  gold and silver coin stocks for France and other countries, drawing on
+  \citet{sicsic1989}, \citet{flandreau1995}, and the annual reports of the
+  US~Mint Director (which tracked foreign specie stocks in detail).
+
+  \item \textbf{\citet{oppers1996}}, who constructed annual data on the composition
+  of the French money supply (gold vs.\ silver shares) for the 1820s--1870s.
+
+  \item \textbf{\citet{wiegand2022}}, Figure~7, which plots the share of silver
+  coins in France's specie circulation from 1849 to 1873, offering an accessible
+  graphical time series based on the Flandreau--Sicsic estimates.
+\end{enumerate}
+
+%---------------------------------------------------------------------
+\section{The Collapse of Bimetallism, 1871--1878}
+%---------------------------------------------------------------------
+
+The end of the French bimetallic system came in a cascade of events triggered by the
+Franco-Prussian War of 1870--71.
+
+\begin{itemize}
+  \item \textbf{July 1871.}  The Berlin Mint suspended silver coinage as Germany
+  began accumulating gold using France's war indemnity payments.
+  \item \textbf{July 1873.}  Germany formally adopted the gold standard
+  (Reichstag legislation).
+  \item \textbf{6~September 1873.}  France settled the final installment of its war
+  indemnity, paying approximately 5 billion francs (exceeding 20 percent of French
+  GDP)~\citep{wiegand2023}.  The following day the Paris Mint limited silver
+  coinage, breaking the bimetallic bond.
+  \item \textbf{30~January 1874.}  The LMU members agreed in Paris to limit free
+  silver coinage temporarily.
+  \item \textbf{1876.}  France suspended silver coinage entirely.
+  \item \textbf{1878.}  The LMU formally suspended free silver coinage altogether,
+  placing the union on a de facto gold standard~\citep{wikipedia_lmu}.
+\end{itemize}
+
+\citet{flandreau1996} argued in a widely cited paper that France's September 1873
+decision was the critical event, not Germany's demonetization per se.  The
+suspension ended France's function as the world's bimetallic stabilizer and
+immediately caused silver to depreciate sharply against gold.  \citet{wiegand2022}
+confirms that bimetallism was technically viable in September 1873---France's
+absorption capacity was sufficient to handle the German silver---and that its
+end reflected a strategic game between France and Germany rather than economic
+inevitability.  \citet{meissner2015} reaches a less optimistic verdict, arguing
+that by 1875 the growing number of countries shifting to gold would have made
+bimetallism unsustainable regardless.
+
+\bigskip
+
+%---------------------------------------------------------------------
+\section{The US Mint and Bimetallic Ratios, 1792--1873}
+%---------------------------------------------------------------------
+
+\subsection{The Coinage Act of 1792: Hamilton's 15:1 Ratio}
+
+The United States adopted bimetallism from the outset under Alexander Hamilton's
+monetary architecture.  Hamilton's \textit{Report on the Establishment of a Mint}
+(January 1791) proposed free coinage of both gold and silver, with the dollar
+defined in both metals simultaneously.  The Coinage Act of 2~April 1792 enacted
+his plan, with Section~11 fixing the proportional value of gold to silver at
+\emph{fifteen to one} by weight of pure metal~\citep{statutesandstories}.
+
+Under this law the silver dollar contained 371.25 grains of pure silver (416 grains
+standard weight), and the gold Eagle (\$10) contained 247.5 grains of pure gold
+(270 grains standard weight).  The implied ratio was exactly 15:1.  Hamilton chose
+this figure because it was close to the then-prevailing market ratio in the United
+States and in continental Europe~\citep{econlib_silverperiod}.
+
+The system immediately ran into Gresham's law.  The world market ratio in the
+early nineteenth century was closer to 15.5:1, meaning gold was slightly
+\emph{undervalued} at the American mint (15:1) relative to its European market
+value.  Gold tended to be exported; the US operated on a de facto silver standard
+for most of the period 1792--1834.  The 15:1 ratio was, from the outset, 0.5
+percentage points below the French ratio of 15.5:1, and this small but persistent
+divergence had large monetary consequences over the long run.
+
+\subsection{The Coinage Act of 1834: Shift to 16:1}
+
+Political pressure to bring gold back into domestic circulation led Congress to
+overhaul the mint ratio in 1834.  The Coinage Act of 28~June 1834 reduced the gold
+content of the gold Eagle by approximately 6.5 percent, raising the effective
+mint ratio from 15:1 to approximately \emph{sixteen to one}~\citep{apmex_1834}.
+
+The new ratio was not derived from the market ratio.  The market ratio at the time
+was roughly 15.7:1, and proposals were made in Congress for a ratio of 15.6:1
+(close to France's 15.5) or 15.625:1.  These were rejected; the ratio of 16:1 was
+chosen to favor gold decisively and ensure that gold coins would circulate
+domestically rather than be exported~\citep{econlib_1834}.  It was recognized by
+contemporaries that 16:1 would drive silver out.  Mr.~Gorham of Massachusetts warned
+on the floor of the House that making gold too cheap at the mint would cause silver
+to disappear from circulation---precisely what happened~\citep{econlib_1834}.
+
+The Coinage Act of 1837 made a minor technical adjustment, standardizing the
+gold--silver alloy proportion at one-tenth for both metals, which altered the exact
+ratio to approximately 15.988:1 (often rounded to 16:1 in the literature).
+
+After 1834, with the market ratio typically in the range of 15.5--15.8, the
+American mint ratio of 16:1 overvalued gold and undervalued silver.  Silver was
+now the metal whose coin value fell below its bullion value; it tended to be melted
+or exported.  The Coinage Act of 1853 addressed the resulting shortage of small
+change by formally debasing fractional silver coins (dimes, quarters, half dollars)
+to 835\textperthousand{} fineness---the same solution France had adopted in 1864.
+Full-weight silver dollars were still legally authorised but were seldom coined.
+By the 1850s the United States was on a de facto gold standard~\citep{legalclarity}.
+
+\subsection{The Coinage Act of 1873: The ``Crime of '73''}
+
+The Civil War suspended specie convertibility.  When Congress turned to restoring
+it, the Coinage Act of 12~February 1873 omitted the standard silver dollar from
+the list of authorized coins, effectively demonetizing silver and placing the
+United States permanently on a gold standard upon resumption of specie payments
+(which occurred in 1879).  The act was labeled the ``Crime of~'73'' by populists
+and silver interests who argued it had been passed without adequate public debate
+and that it inexcusably committed the country to the deflationary gold standard.
+
+\citet{friedman1990jep} argued that had the United States retained bimetallism---
+even at the 16:1 ratio rather than France's 15.5:1---resumption of specie payments
+would likely have occurred on a silver rather than gold basis, and the severe
+deflation of the 1870s--1890s would have been substantially moderated.  In the
+Friedman counterfactual, the market gold-silver ratio would have remained close to
+16:1 through roughly 1914, rather than rising to nearly 32:1 by 1896.
+
+\subsection{Summary: US Mint Ratios}
+
+Table~\ref{tab:us_ratios} summarizes the statutory mint ratios at the United States
+Mint from 1792 through the abandonment of bimetallism.
+
+\begin{table}[h!]
+\centering
+\caption{US Mint Ratios (Silver per Unit of Gold), 1792--1873}
+\label{tab:us_ratios}
+\begin{tabular}{lll}
+\toprule
+\textbf{Period} & \textbf{Statutory Ratio} & \textbf{Governing Legislation} \\
+\midrule
+1792--1834 & 15.00:1  & Coinage Act of 1792 \\
+1834--1837 & $\approx$16.002:1 & Coinage Act of 1834 \\
+1837--1873 & $\approx$15.988:1 & Coinage Act of 1837 (minor adjustment) \\
+1873--     & Gold standard; silver dollar omitted & Coinage Act of 1873 \\
+\bottomrule
+\end{tabular}
+\smallskip\\
+\small\textit{Note}: The French mint ratio was 15.5:1 throughout 1803--1873.
+\end{table}
+
+\bigskip
+
+%---------------------------------------------------------------------
+\section{Would a Shared US--France Ratio of 15.5:1 Have Stabilized\\
+International Bimetallism?}
+%---------------------------------------------------------------------
+
+The two legs of France's bimetallic system---the fixed mint ratio and free coinage
+open to the public---gave France its role as the ``buyer and seller of last resort''
+for both metals.  As \citet{friedman1990jep} put it, France was ``a major
+participant in the market for silver and gold, important enough to be able to peg
+the price ratio despite major changes in the relative production of silver and
+gold.''  The United States, as the other large economy with a bimetallic legal
+framework, could have played a complementary role---but its ratio diverged from
+France's for virtually the entire period.
+
+\subsection{The Three Gaps and Their Consequences}
+
+Three distinct gaps between US and French ratios can be identified.
+
+\textbf{1792--1803 (before French reform):} the US was at 15:1 while France was
+also near 15.5:1 (the 1785 standard) before the 1803 codification.  The gap was
+about 0.5 in ratio units.  At a market ratio near 15.5, gold was undervalued in
+the US and tended to be exported; the US circulated silver, France circulated
+silver; both behaved similarly.  The gap was small enough not to create dramatic
+triangular arbitrage.
+
+\textbf{1803--1834:} France at 15.5, US at 15.0.  With the market ratio near 15.5,
+the US at 15:1 consistently undervalued gold, which flowed out.  Had the US been at
+15.5, it would have been in the same regime as France: both would have faced
+effective silver monometallism until the California gold rush.  The direction of
+effect is not obviously destabilizing, but the US was not contributing to the
+bimetallic buffer.
+
+\textbf{1834--1873:} France at 15.5, US at $\approx$16.  This is the consequential
+gap.  At a market ratio typically between 15.4 and 15.8 (before the post-1873
+collapse), the US ratio of 16 consistently overvalued gold at the US mint and
+undervalued silver.  As a result:
+\begin{itemize}
+  \item After 1848, when the market ratio fell below 15.5, gold flowed into
+  France under the French rule but not into the US under the 16:1 rule (gold was
+  overvalued at 16:1 even more, so gold was not exported from the US);
+  \item The US effectively withdrew from the bimetallic buffer function.  Silver
+  was scarce in US circulation even as it was abundant in France.
+  \item The global bimetallic stabilization mechanism ran through France alone,
+  making it more fragile.
+\end{itemize}
+
+\subsection{The Flandreau--Friedman--Meissner Counterfactual}
+
+The literature provides a fairly direct answer to the counterfactual of a permanent
+US ratio of 15.5:1.
+
+\citet{friedman1990jep} showed, using a partial-equilibrium accounting framework,
+that the US at 16:1 after 1834 was effectively a gold-standard country, since
+silver was always departing from US circulation.  Retention of bimetallism at
+15.5:1 throughout 1803--1873 would have meant the US shared France's buffer-stock
+role.  The combined specie stock of France and the US was very large---together they
+constituted the dominant bimetallic bloc.  A Franco-American bimetallic bloc at the
+same ratio of 15.5:1 would have been approximately twice as large as the French
+bloc alone in terms of monetary metal holdings.
+
+\citet{meissner2015} provides a formal assessment using \citeauthor{flandreau1996}'s
+(\citeyear{flandreau1996}) general equilibrium model.  The viability of bimetallism
+depends on the size of the bimetallic bloc relative to the world supply of
+precious metals.  A country defecting to gold raises the demand for gold and
+lowers the demand for silver, which stresses the bimetallic anchor at the margin.
+Meissner shows that a country only needs to have a specie demand equal to about
+31 percent of France's to tip bimetallism from viable to unviable, and Germany's
+specie demand in the early 1870s was approximately 27 percent of France's---very
+close to that threshold.  Had the United States---with specie demand that by the
+1880s exceeded 50 percent of France's---been part of a bimetallic bloc at 15.5:1,
+the threshold for instability would have been much harder to reach.
+
+\citet{friedman1990jep} concluded explicitly: ``The U.S.\ could have played the same
+role after 1873 in stabilizing the gold-silver price ratio that France did before
+1873.''  However, at the US ratio of 16:1 rather than 15.5:1, a coordinated bimetallic
+system would have required a different ratio for both countries.  \citet{meissner2015}
+notes that a joint Franco-American attempt to maintain bimetallism at 15.5:1 in 1878
+would have been ``tenuous'' by that late date, given the number of countries already
+committed to gold.
+
+\citet{flandreau1996} and \citet{wiegand2022} identify two structural prerequisites
+for stable international bimetallism: (i)~a large-enough bimetallic bloc, and
+(ii)~a single shared mint ratio (since two different bimetallic ratios create
+arbitrage possibilities that can rapidly drain one country of both metals).
+A world in which the US had adopted France's 15.5:1 ratio in 1834---or even in
+1792---would have satisfied both prerequisites far better than the actual world of
+1834--1873 in which the US ratio lay a full half-percentage-point above France's.
+
+\subsection{Caveats and the Long Run}
+
+Several caveats temper an overly optimistic assessment.
+
+First, even a large Franco-American bloc at 15.5:1 would eventually have confronted
+the secular rise in silver production from the American West beginning in the late
+1860s and accelerating through the 1880s.  \citet{velde_weber2000} show that the
+long-run trajectory of the gold-silver ratio was determined by relative metal
+production, and that by the 1880s the secular fall in silver's value would have
+pushed a bimetallic equilibrium toward effective silver monometallism, eroding the
+gold component of the money supply.  \citet{meissner2015} estimates this would
+have become unviable by around 1875--1880 given realistic silver production
+scenarios.
+
+Second, the choice of a mint ratio is itself a political act, and the US political
+economy of 1834 was hostile to any ratio that did not decisively favor gold
+circulation.  The Jacksonian Democrats who passed the Coinage Act of 1834 were
+motivated primarily by a desire to return gold to everyday use (replacing bank
+notes) rather than by any theory of international monetary stabilization.
+A counterfactual that asks Congress to have chosen 15.5:1 instead of 16:1 in 1834
+must contend with this political economy.
+
+Third, the Velde-Weber target-zone model shows that stability of the market ratio
+requires not only a large bimetallic bloc but also that both metals actually
+circulate simultaneously in that bloc---not just that a single metal dominates
+most of the time with the other appearing only at the margin.  At 16:1, the US was
+for decades in ``effective gold monometallism,'' meaning the US specie stock
+contributed nothing to the bimetallic buffer even though the US was technically a
+bimetallic country by statute.  At 15.5:1 with the US ratio matching France's, the
+US would have been in the same effective regime as France---sometimes effective
+silver monometallism, sometimes effective gold monometallism---but in either case
+contributing additively to the buffer capacity.
+
+\subsection{Assessment}
+
+The scholarly consensus, synthesized from \citet{friedman1990jep},
+\citet{flandreau1996,flandreau2004}, \citet{oppers1996,oppers2000},
+\citet{velde_weber2000}, \citet{meissner2015}, and \citet{wiegand2022}, supports
+the following conclusion.  Had the United States permanently adopted France's
+ratio of 15.5:1 from 1792 (or at least from 1803), and maintained free coinage of
+both metals throughout the pre-Civil War period:
+\begin{enumerate}
+  \item The bimetallic buffer bloc would have been substantially larger in the
+  critical decade of the 1860s--1870s, making Germany's silver demonetization far
+  less disruptive to the ratio;
+  \item The US would likely have resumed specie convertibility on a silver rather
+  than gold basis in 1876--1879, sustaining bimetallism for at least an additional
+  decade;
+  \item The global deflation of the 1880s--1890s---attributable in large part to
+  the undersupply of gold relative to real economic growth under the gold
+  standard---would have been significantly moderated;
+  \item But bimetallism would still have faced severe stress from the silver glut
+  of the 1880s--1890s, and its long-run viability beyond 1890 was uncertain even
+  in the most optimistic counterfactual.
+\end{enumerate}
+
+In short, a coordinated US--France bimetallic standard at 15.5:1, maintained from
+1803, would have been both more robust and more durable than the historical
+outcome---but it would not have been indefinitely sustainable in the face of the
+secular changes in precious metal supplies that unfolded after 1870.
+
+\bigskip
+
+%---------------------------------------------------------------------
+\section{Chronological Summary}
+%---------------------------------------------------------------------
+
+Table~\ref{tab:timeline} summarizes the main events discussed in this note.
+
+\begin{table}[h!]
+\centering
+\caption{Key Dates in French and American Bimetallism}
+\label{tab:timeline}
+\begin{tabular}{>{\raggedright}p{2.0cm}p{11.5cm}}
+\toprule
+\textbf{Date} & \textbf{Event} \\
+\midrule
+1785          & France adopts 15.5:1 mint ratio for its coinage. \\
+2 Apr 1792    & Coinage Act of 1792: US sets ratio at 15:1 (Hamilton). \\
+28 Mar 1803   & Law of 7 Germinal An~XI: France codifies 15.5:1; franc Germinal established. \\
+1803--1848    & Market ratio $>$ 15.5: silver coined in France, gold exported; US effective silver standard. \\
+1848--1866    & California/Australian gold rush: market ratio $<$ 15.5; gold coined in France, silver exported to Asia. \\
+28 Jun 1834   & Coinage Act of 1834: US raises ratio to $\approx$16:1; US shifts to effective gold standard. \\
+1837          & Coinage Act of 1837: minor alloy adjustment; ratio $\approx$15.988. \\
+1853          & Coinage Act of 1853: US debases fractional silver coins. \\
+1864          & France debases subsidiary silver (except 5-franc piece) from 900 to 835\textperthousand. \\
+23 Dec 1865   & Treaty of the Latin Monetary Union: France, Belgium, Italy, Switzerland adopt 15.5:1. \\
+1 Aug 1866    & Latin Monetary Union takes effect. \\
+1866--1873    & Market ratio rises above 15.5 again; silver flows back to France. \\
+12 Feb 1873   & US Coinage Act of 1873 (``Crime of '73''): silver dollar omitted; US on gold. \\
+Jul 1873      & Germany formally adopts gold standard. \\
+6 Sep 1873    & Paris Mint limits silver coinage; bimetallic bond broken. \\
+30 Jan 1874   & LMU limits free silver coinage. \\
+1876          & France suspends silver coinage entirely. \\
+1878          & LMU formally adopts gold standard. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\bigskip
+
+\bibliographystyle{plainnat}
+\bibliography{bimetallism}
+
+\end{document}
